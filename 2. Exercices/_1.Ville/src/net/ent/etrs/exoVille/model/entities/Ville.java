@@ -1,8 +1,8 @@
 package net.ent.etrs.exoVille.model.entities;
 
 public class Ville {
-    private String nom;
-    private int nbHabitants;
+    public String nom;
+    public int nbHabitants;
 
     public Ville() {
         super();
