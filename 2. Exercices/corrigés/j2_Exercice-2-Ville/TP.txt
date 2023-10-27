@@ -1,0 +1,11 @@
+Exercice :
+
+Ecrire une classe Ville répondant au cahier des charges suivant :
+- une ville est décrite par deux informations :
+- son nom
+- son nombre d’habitants (int nbHabitants)
+
+une ville est capable d’afficher ses caractéristiques
+
+Tester cette classe en écrivant la classe ProgMain contenant la méthode :
+			public static void main(String[] args)

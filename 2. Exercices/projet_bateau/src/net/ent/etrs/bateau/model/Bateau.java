@@ -6,13 +6,22 @@ public class Bateau {
     private float tonnage;
     private boolean estPret;
     private TypeBateau classe;
+    private Armement[] armements;
+    public Bateau(String nom, int nbEquipage, float tonnage, boolean estPret, TypeBateau classe, Armement[] armements) {
+        this.setNom(nom);
+        this.setNbEquipage(nbEquipage);
+        this.setTonnage(tonnage);
+        this.setEstPret(estPret);
+        this.setClasse(classe);
+        this.setArmements(armements);
+    }
 
     public Bateau(String nom, int nbEquipage, float tonnage, boolean estPret, TypeBateau classe) {
-        this.nom = nom;
-        this.nbEquipage = nbEquipage;
-        this.tonnage = tonnage;
-        this.estPret = estPret;
-        this.classe = classe;
+        this.setNom(nom);
+        this.setNbEquipage(nbEquipage);
+        this.setTonnage(tonnage);
+        this.setEstPret(estPret);
+        this.setClasse(classe);
     }
 
     public String getNom() {
@@ -55,10 +64,22 @@ public class Bateau {
         this.classe = classe;
     }
 
-    public void afficherInfoBateau() {
-        System.out.println("Nom du bâteau : " + nom);
-        System.out.println("Nombre équipage : " + nbEquipage);
-        System.out.println("Tonnage : " + tonnage);
-        System.out.println("Prêt ? " + estPret);
+    public Armement[] getArmements() {
+        return armements;
+    }
+
+    public void setArmements(Armement[] armements) {
+        this.armements = armements;
+    }
+
+    @Override
+    public String toString() {
+        return "Bateau{" +
+                "nom='" + nom + '\'' +
+                ", nbEquipage=" + nbEquipage +
+                ", tonnage=" + tonnage +
+                ", estPret=" + estPret +
+                ", classe=" + classe +
+                '}';
     }
 }

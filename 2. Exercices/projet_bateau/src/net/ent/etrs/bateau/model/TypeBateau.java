@@ -6,9 +6,9 @@ public class TypeBateau {
     private float tonnageMax;
 
     public TypeBateau(String nom, int longueur, float tonnageMax) {
-        this.nom = nom;
-        this.longueur = longueur;
-        this.tonnageMax = tonnageMax;
+        this.setNom(nom);
+        this.setLongueur(longueur);
+        this.setTonnageMax(tonnageMax);
     }
 
     public String getNom() {
@@ -35,9 +35,12 @@ public class TypeBateau {
         this.tonnageMax = tonnageMax;
     }
 
-    public void afficherInfoTypeBateau() {
-        System.out.println("Nom type de bâteau : " + nom);
-        System.out.println("Longueur : " + longueur);
-        System.out.println("Tonnage max : " + tonnageMax);
+    @Override
+    public String toString() {
+        return "TypeBateau{" +
+                "nom='" + nom + '\'' +
+                ", longueur=" + longueur +
+                ", tonnageMax=" + tonnageMax +
+                '}';
     }
 }
