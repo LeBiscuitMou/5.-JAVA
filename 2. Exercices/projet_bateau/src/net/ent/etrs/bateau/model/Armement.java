@@ -1,14 +1,15 @@
 package net.ent.etrs.bateau.model;
 
+import java.util.Objects;
+
 public class Armement {
     private String nom;
     private float calibre;
     private int portee;
-
-    public Armement(String nom, float calibre, int portee) {
-        this.setNom(nom);
-        this.setCalibre(calibre);
-        this.setPortee(portee);
+    public Armement(String leNom, float leCalibre, int laPortee) {
+        this.setNom(leNom);
+        this.setCalibre(leCalibre);
+        this.setPortee(laPortee);
     }
 
     public String getNom() {
@@ -42,5 +43,18 @@ public class Armement {
                 ", calibre=" + calibre +
                 ", portee=" + portee +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Armement armement = (Armement) o;
+        return Float.compare(calibre, armement.calibre) == 0 && Objects.equals(nom, armement.nom);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nom, calibre);
     }
 }

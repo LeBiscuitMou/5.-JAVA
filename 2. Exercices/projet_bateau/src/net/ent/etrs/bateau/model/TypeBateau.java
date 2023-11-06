@@ -1,5 +1,7 @@
 package net.ent.etrs.bateau.model;
 
+import java.util.Objects;
+
 public class TypeBateau {
     private String nom;
     private int longueur;
@@ -42,5 +44,18 @@ public class TypeBateau {
                 ", longueur=" + longueur +
                 ", tonnageMax=" + tonnageMax +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TypeBateau that = (TypeBateau) o;
+        return Objects.equals(nom, that.nom);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nom);
     }
 }

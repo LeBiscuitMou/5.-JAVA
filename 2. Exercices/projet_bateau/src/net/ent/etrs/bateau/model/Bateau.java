@@ -16,22 +16,33 @@ public class Bateau {
         this.setTonnage(tonnage);
         this.setEstPret(estPret);
         this.setClasse(classe);
-        this.setArmements(armements);
+        this.armements = new Armement[4];
     }
-
-    public Bateau(String nom, int nbEquipage, float tonnage, boolean estPret, TypeBateau classe) {
-        this.setNom(nom);
-        this.setNbEquipage(nbEquipage);
-        this.setTonnage(tonnage);
-        this.setEstPret(estPret);
-        this.setClasse(classe);
-    }
-
     public String getNom() {
         return nom;
     }
 
     public void setNom(String nom) {
+        // Test de base
+        // SI c'est null
+        if (Objects.isNull(nom)) {
+            System.out.println("Le nom est null");
+        }
+        if (null == nom) {
+            System.out.println("Le nom est null");
+        }
+        // Si c'est vide
+        if (nom.isBlank()) {
+            System.out.println("Le nom est vide et ne contient pas d'espace");
+        }
+        // Règles Métier
+        // Limiter la taille du nom
+        if (nom.length() > 15) {
+            System.out.println("Le nom est trop grand");
+        }
+        // Pas de chiffre
+        // TODO coder la méthode
+
         this.nom = nom;
     }
 
@@ -40,6 +51,16 @@ public class Bateau {
     }
 
     public void setNbEquipage(int nbEquipage) {
+        // Test de base
+        if (nbEquipage < 0) {
+
+        }
+
+        // Tester la max
+        if (nbEquipage > 4000) {
+
+        }
+
         this.nbEquipage = nbEquipage;
     }
 
@@ -48,6 +69,16 @@ public class Bateau {
     }
 
     public void setTonnage(float tonnage) {
+        // Test de base
+        if (tonnage < 0) {
+
+        }
+
+        // Tester la max
+        if (tonnage > this.classe.getTonnageMax()) {
+
+        }
+
         this.tonnage = tonnage;
     }
 
@@ -64,15 +95,19 @@ public class Bateau {
     }
 
     public void setClasse(TypeBateau classe) {
+        if (Objects.isNull(classe)) {
+            System.out.println("La classe est null");
+        }
+        if (null == classe) {
+            System.out.println("La classe est null");
+        }
+
+
         this.classe = classe;
     }
 
     public Armement[] getArmements() {
-        return armements;
-    }
-
-    public void setArmements(Armement[] armements) {
-        this.armements = armements;
+        return Arrays.copyOf(this.armements, armements.length);
     }
 
     @Override
@@ -91,13 +126,19 @@ public class Bateau {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bateau bateau = (Bateau) o;
-        return nbEquipage == bateau.nbEquipage && Float.compare(tonnage, bateau.tonnage) == 0 && estPret == bateau.estPret && Objects.equals(nom, bateau.nom) && Objects.equals(classe, bateau.classe) && Arrays.equals(armements, bateau.armements);
+        return Objects.equals(nom, bateau.nom) && Objects.equals(classe, bateau.classe);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(nom, nbEquipage, tonnage, estPret, classe);
-        result = 31 * result + Arrays.hashCode(armements);
-        return result;
+        return Objects.hash(nom, classe);
+    }
+
+    public void ajouterArmement(Armement arme) {
+
+    }
+
+    public void retirerArmement(Armement arme) {
+
     }
 }
