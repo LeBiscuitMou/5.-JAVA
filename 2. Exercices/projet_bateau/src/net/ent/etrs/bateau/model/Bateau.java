@@ -1,5 +1,8 @@
 package net.ent.etrs.bateau.model;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Bateau {
     private String nom;
     private int nbEquipage;
@@ -81,5 +84,20 @@ public class Bateau {
                 ", estPret=" + estPret +
                 ", classe=" + classe +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Bateau bateau = (Bateau) o;
+        return nbEquipage == bateau.nbEquipage && Float.compare(tonnage, bateau.tonnage) == 0 && estPret == bateau.estPret && Objects.equals(nom, bateau.nom) && Objects.equals(classe, bateau.classe) && Arrays.equals(armements, bateau.armements);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(nom, nbEquipage, tonnage, estPret, classe);
+        result = 31 * result + Arrays.hashCode(armements);
+        return result;
     }
 }
