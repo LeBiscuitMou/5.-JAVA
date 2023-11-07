@@ -1,5 +1,8 @@
 package net.ent.etrs.bateau.model;
 
+import net.ent.etrs.bateau.model.references.ConstanteMetier;
+import net.ent.etrs.bateau.model.utils.VerificationUtils;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -26,10 +29,10 @@ public class Bateau {
         // Test de base
         // SI c'est null
         if (Objects.isNull(nom)) {
-            System.out.println("Le nom est null");
+            System.out.println(ConstanteMetier.BATEAU_ERROR_NULL);
         }
         if (null == nom) {
-            System.out.println("Le nom est null");
+            System.out.println(ConstanteMetier.BATEAU_ERROR_NULL);
         }
         // Si c'est vide
         if (nom.isBlank()) {
@@ -37,11 +40,13 @@ public class Bateau {
         }
         // Règles Métier
         // Limiter la taille du nom
-        if (nom.length() > 15) {
+        if (nom.length() > ConstanteMetier.BATEAU_NOM_LONGUEUR_MAX) {
             System.out.println("Le nom est trop grand");
         }
         // Pas de chiffre
-        // TODO coder la méthode
+        if (VerificationUtils.aUnChiffre(nom)) {
+            System.out.println(ConstanteMetier.BATEAU_NOM_ERROR_CHIFFRE);
+        }
 
         this.nom = nom;
     }
