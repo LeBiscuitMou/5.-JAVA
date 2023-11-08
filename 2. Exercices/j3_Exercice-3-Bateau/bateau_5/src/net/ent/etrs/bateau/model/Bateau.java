@@ -1,6 +1,7 @@
 package net.ent.etrs.bateau.model;
 
 import net.ent.etrs.bateau.model.exceptions.BateauException;
+import net.ent.etrs.bateau.model.exceptions.TypeBateauException;
 import net.ent.etrs.bateau.model.references.ConstanteMetier;
 import net.ent.etrs.bateau.model.utils.VerificationUtils;
 
@@ -19,13 +20,12 @@ public class Bateau {
 
     public void ajouterArmement(Armement arme){
         this.armesBateau[0] = arme;
-
     }
 
     public void retirerArmement(Armement arme){
 
     }
-    public Bateau(String leNom, int leNbEquipage, float leTonnage, boolean estPret, TypeBateau leTypeBateau) throws BateauException {
+    public Bateau(String leNom, int leNbEquipage, float leTonnage, boolean estPret, TypeBateau leTypeBateau) throws BateauException, TypeBateauException {
         this.setNom(leNom);
         this.setNbEquipage(leNbEquipage);
         this.setTonnage(leTonnage);
@@ -48,24 +48,21 @@ public class Bateau {
         if(Objects.isNull(nom)){
             throw new BateauException(ConstanteMetier.BATEAU_NOM_IS_NULL);
         }
-        if(null == nom){
-            System.out.println("Le nom est null");
-        }
         //Si c'est vide
         if(nom.isBlank()){
-            System.out.println("Le nom est vide et ne contient pas d'espace");
+            throw new BateauException(ConstanteMetier.BATEAU_NOM_IS_BLANK);
         }
 
         //Règles Métier
         //Limiter la taille du nom
         if (nom.length() > ConstanteMetier.BATEAU_NOM_LONGUEUR_MAX){
-            System.out.println("Le nom est trop grand");
+            throw new BateauException(ConstanteMetier.BATEAU_NOM_TROP_GRAND);
         }
 
         //Pas de chiffre
         //TODO coder la methode.
         if(VerificationUtils.aUnChiffre(nom)){
-            System.out.println(ConstanteMetier.BATEAU_NOM_ERROR_CHIFFRE);
+            throw new BateauException(ConstanteMetier.BATEAU_NOM_ERROR_CHIFFRE);
         }
 
         this.nom = nom;
@@ -119,9 +116,9 @@ public class Bateau {
         return classe;
     }
 
-    public void setClasse(TypeBateau classe) {
+    public void setClasse(TypeBateau classe) throws BateauException {
         if(Objects.isNull(classe)){
-            System.out.println("la classe du bateau est null");
+            throw new BateauException("la classe du bateau est null");
         }
 
 
