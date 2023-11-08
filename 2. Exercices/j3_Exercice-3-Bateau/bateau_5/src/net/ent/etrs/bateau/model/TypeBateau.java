@@ -1,6 +1,5 @@
 package net.ent.etrs.bateau.model;
 
-import net.ent.etrs.bateau.model.exceptions.BateauException;
 import net.ent.etrs.bateau.model.exceptions.TypeBateauException;
 import net.ent.etrs.bateau.model.references.ConstanteMetier;
 import net.ent.etrs.bateau.model.utils.VerificationUtils;
