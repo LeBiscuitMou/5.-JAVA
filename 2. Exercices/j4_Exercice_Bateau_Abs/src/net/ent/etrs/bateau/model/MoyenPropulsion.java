@@ -1,8 +1,11 @@
 package net.ent.etrs.bateau.model;
 
-public class MoyenPropulsion {
-    private String nucleaire;
-    private String gaz;
-    private String petrole;
-    private String electricite;
+public final class MoyenPropulsion {
+    public static final String NUCLEAIRE = "Nucléaire";
+    public static final String GAZ = "Gaz";
+    public static final String PETROLE = "Pétrole";
+    public static final String ELECTRICITE = "Electricité";
+
+    private MoyenPropulsion() {
+    }
 }

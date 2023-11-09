@@ -11,15 +11,17 @@ public abstract class Bateau {
     private String nom;
     private int nbEquipage;
     private boolean estPret;
-    private MoyenPropulsion moyenPropulsion;
+    private float tonnage;
+    private String moyenPropulsion;
     private Armement[] armements;
 
-    public Bateau(String nom, int nbEquipage, boolean estPret, MoyenPropulsion moyenPropulsion, Armement[] armements) throws BateauException {
+    public Bateau(String nom, int nbEquipage, boolean estPret, float tonnage, String moyenPropulsion, Armement[] armements) throws BateauException {
         this.setNom(nom);
         this.setNbEquipage(nbEquipage);
         this.setEstPret(estPret);
+        this.setTonnage(tonnage);
         this.setMoyenPropulsion(moyenPropulsion);
-        this.armements = armements;
+        this.armements = new Armement[4];
     }
 
     public String getNom() {
@@ -78,12 +80,20 @@ public abstract class Bateau {
         this.estPret = estPret;
     }
 
-    public MoyenPropulsion getMoyenPropulsion() {
+    public abstract void setTonnage(float tonnage);
+
+    public String getMoyenPropulsion() {
         return moyenPropulsion;
     }
 
-    public void setMoyenPropulsion(MoyenPropulsion moyenPropulsion) {
-        this.moyenPropulsion = moyenPropulsion;
+    public abstract void setMoyenPropulsion(String moyenPropulsion);
+
+    public Armement[] getArmements() {
+        return Arrays.copyOf(this.armements, armements.length);
+    }
+
+    public void setArmements(Armement[] armements) {
+        this.armements = armements;
     }
 
     @Override
@@ -105,7 +115,8 @@ public abstract class Bateau {
                 "nom='" + nom + '\'' +
                 ", nbEquipage=" + nbEquipage +
                 ", estPret=" + estPret +
-                ", moyenPropulsion=" + moyenPropulsion +
+                ", tonnage=" + tonnage +
+                ", moyenPropulsion='" + moyenPropulsion + '\'' +
                 '}';
     }
 }
