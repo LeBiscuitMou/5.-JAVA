@@ -3,7 +3,7 @@ package net.ent.etrs.arene.start;
 import net.ent.etrs.arene.model.*;
 import net.ent.etrs.arene.model.exceptions.FactoryException;
 
-public class Lanceur {
+public class Arene {
     public static void main(String[] args) {
         try {
             Thrace spartacus = (Thrace) EntitiesFactory.entrainerThrace("Spartacus", 3);
