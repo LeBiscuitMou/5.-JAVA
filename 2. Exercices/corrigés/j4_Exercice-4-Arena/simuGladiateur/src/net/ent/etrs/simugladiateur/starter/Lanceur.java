@@ -9,18 +9,15 @@ import net.ent.etrs.simugladiateur.modeles.entities.references.ConstanteMetier;
 import java.util.Objects;
 import java.util.Random;
 
-public class    Lanceur {
-
+public class Lanceur {
     private static Gladiateur[] lesGladiateurs;
 
     public static void main(String[] args) {
-
         //Initialisation des Gladiateur
         lesGladiateurs = init();
 
         //J'affiche les Gladiateurs initiaux
         affichageGladiateurs(lesGladiateurs);
-
 
         do {
             //Je selectionne un Gladiateur
