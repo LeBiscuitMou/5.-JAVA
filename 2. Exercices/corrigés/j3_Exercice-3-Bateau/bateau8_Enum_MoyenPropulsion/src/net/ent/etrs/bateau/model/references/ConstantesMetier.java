@@ -2,7 +2,7 @@ package net.ent.etrs.bateau.model.references;
 
 public final class ConstantesMetier {
 
-    public final static String[] forbiddenSymbol = new String[]{"0","1","2","3","4","5","6","7","8","9"};
+    public final static String[] FORBIDDEN_SYMBOL = new String[]{"0","1","2","3","4","5","6","7","8","9"};
     /* ************** CONSTANTES BATEAU ************/
     public static final int BATEAU_NOM_LONGUEUR_MAX = 15;
     public static final int BATEAU_NB_EQUIPAGE_MAX = 10000;
