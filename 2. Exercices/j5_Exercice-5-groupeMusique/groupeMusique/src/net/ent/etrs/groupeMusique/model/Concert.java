@@ -5,6 +5,7 @@ import net.ent.etrs.groupeMusique.model.references.ConstantesMetier;
 import net.ent.etrs.groupeMusique.model.references.TypeConcert;
 import net.ent.etrs.groupeMusique.model.utils.VerificationUtils;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -12,13 +13,15 @@ public class Concert {
     private String nom;
     private TypeConcert typeConcert;
     private Lieu lieu;
+    private LocalDateTime dateConcert;
     private Musicien[] musiciens;
     private Materiel[] materiels;
 
-    Concert(String nom, TypeConcert typeConcert, Lieu lieu) throws ConcertException {
+    Concert(String nom, TypeConcert typeConcert, Lieu lieu, LocalDateTime laDateConcert) throws ConcertException {
         this.setNom(nom);
         this.setTypeConcert(typeConcert);
         this.setLieu(lieu);
+        this.setDateConcert(laDateConcert);
         this.musiciens = new Musicien[1];
     }
 
@@ -57,6 +60,20 @@ public class Concert {
             //TODO
         }
         this.lieu = lieu;
+    }
+
+    public LocalDateTime getDateConcert() {
+        return dateConcert;
+    }
+
+    public void setDateConcert(LocalDateTime dateConcert) throws ConcertException {
+        if (Objects.isNull(dateConcert)) {
+            throw new ConcertException(ConstantesMetier.CONCERT_DATE_CONCERT_NULL);
+        }
+        if (dateConcert.isBefore(LocalDateTime.now())) {
+            throw new ConcertException(ConstantesMetier.CONCERT_DATE_CONCERT_PASSE);
+        }
+        this.dateConcert = dateConcert;
     }
 
     protected void ajouterMusicien(Musicien musicien) throws ConcertException {
@@ -138,12 +155,12 @@ public class Concert {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Concert concert = (Concert) o;
-        return Objects.equals(nom, concert.nom) && typeConcert == concert.typeConcert && Objects.equals(lieu, concert.lieu);
+        return Objects.equals(nom, concert.nom) && Objects.equals(lieu, concert.lieu) && Objects.equals(dateConcert, concert.dateConcert);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nom, typeConcert, lieu);
+        return Objects.hash(nom, lieu, dateConcert);
     }
 
     @Override
@@ -152,6 +169,7 @@ public class Concert {
                 "nom='" + nom + '\'' +
                 ", typeConcert=" + typeConcert +
                 ", lieu=" + lieu +
+                ", dateConcert=" + dateConcert +
                 '}';
     }
 }

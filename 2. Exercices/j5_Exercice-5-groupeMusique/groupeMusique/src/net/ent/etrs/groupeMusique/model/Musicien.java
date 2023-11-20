@@ -5,6 +5,7 @@ import net.ent.etrs.groupeMusique.model.exception.PersonneException;
 import net.ent.etrs.groupeMusique.model.references.Sexe;
 import net.ent.etrs.groupeMusique.model.references.ConstantesMetier;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -13,8 +14,8 @@ public class Musicien extends Personne{
     private Materiel[] materiels = new Materiel[0];
 
 
-    protected Musicien(String nom, String prenom, Sexe sexe, String nomArtiste) throws PersonneException {
-        super(nom, prenom, sexe);
+    protected Musicien(String nom, String prenom, Sexe sexe, String nomArtiste, LocalDate laDateNaissance) throws PersonneException {
+        super(nom, prenom, sexe, laDateNaissance);
         this.setNomArtiste(nomArtiste);
     }
 

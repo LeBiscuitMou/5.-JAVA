@@ -35,6 +35,10 @@ public final class ConstantesMetier {
     public static final String FACADE_ERROR_CREATE_CONCERT = "ERR: Impossible de créer un concert";
     public static final String FACADE_ERROR_DELETE_CONCERT = "ERR: Impossible d'annuler le concert";
     public static final String FACADE_ERROR_UPDATE_CONCERT = "ERR: Impossible de modifier un concert";
+    public static final String PERSONNE_DATE_NAISSANCE_NULL = "ERR: La date de naissance ne peut pas être null";
+    public static final String PERSONNE_DATE_NAISSANCE_FUTURE = "ERR: La date de naissance ne peut pas être dans le futur";
+    public static final String CONCERT_DATE_CONCERT_NULL = "ERR: La date de concert est null";
+    public static final String CONCERT_DATE_CONCERT_PASSE = "ERR: La date du concert est dans le passey";
 
     private ConstantesMetier() {
     }
