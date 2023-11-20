@@ -7,6 +7,7 @@ public final class ConstanteUtils {
     public static final String TABLEAU_UTILS_NB_CASE_POSITIF = "le nombre de case doit être positif";
     public static final String TABLEAU_UTILS_NB_CASE_NEGATIF = "le nombre de case doit être strictement négatif";
     public static final String TABLEAU_UTILS_TABLEAU_OUT_OF_BAND = "le nombre de case ne doit pas rendre le tableau en dehors des limites";
+    public static final String TABLEAU_UTILS_OBJECT_NON_PRESENT_DANS_TABLEAU = "L'objet n'est pas présent dans le tableau d'objet";
 
     private ConstanteUtils() {
     }

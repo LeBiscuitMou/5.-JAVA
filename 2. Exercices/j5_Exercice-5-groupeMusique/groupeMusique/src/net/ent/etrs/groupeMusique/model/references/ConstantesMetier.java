@@ -9,9 +9,7 @@ public final class ConstantesMetier {
     public static final int PRENOM_LONGUEUR_MAX = 15;
     public static final String PRENOM_ERROR_LONGUEUR = "La longueur du prénom doit être inférieur à "+PRENOM_LONGUEUR_MAX;
     public static final String PRENOM_ERROR_CHIFFRE = "Le prénom ne doit pas contenir de chiffre";
-
-    private ConstantesMetier() {
-    }
+    public static final String FACADE_ERROR_SAVE_MUSICIEN = "Impossible de sauvegarder le musicien";
 
     public final static String[] VALEUR_INTERDITE = new String[]{"0","1","2","3","4","5","6","7","8","9"};
     public static final String NOM_IS_NULL = "ERR: Le nom est null.";
@@ -32,5 +30,12 @@ public final class ConstantesMetier {
     public static final String FACTORY_INSTRUMENT_ERROR = "ERR: Instrument non crée.";
     public static final String FACTORY_LIEU_ERROR = "ERR: Lieu non crée.";
     public static final String FACTORY_CONCERT_ERROR = "ERR: Concert non crée.";
+    public static final String FACADE_ERROR_DELETE_MUSICIEN = "ERR: Impossible de supprimer le musicien";
+    public static final String FACADE_ERROR_UPDATE_MUSICIEN = "ERR: Impossible de modifier le musicien";
+    public static final String FACADE_ERROR_CREATE_CONCERT = "ERR: Impossible de créer un concert";
+    public static final String FACADE_ERROR_DELETE_CONCERT = "ERR: Impossible d'annuler le concert";
+    public static final String FACADE_ERROR_UPDATE_CONCERT = "ERR: Impossible de modifier un concert";
 
+    private ConstantesMetier() {
+    }
 }

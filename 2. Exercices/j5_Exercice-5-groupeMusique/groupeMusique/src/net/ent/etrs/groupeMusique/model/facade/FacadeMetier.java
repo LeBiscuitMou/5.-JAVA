@@ -1,26 +1,29 @@
 package net.ent.etrs.groupeMusique.model.facade;
 
 import net.ent.etrs.groupeMusique.model.Concert;
+import net.ent.etrs.groupeMusique.model.Fan;
 import net.ent.etrs.groupeMusique.model.Musicien;
+import net.ent.etrs.groupeMusique.model.utils.exception.FacadeMetierException;
+import net.ent.etrs.groupeMusique.model.utils.exception.TableauUtilsException;
 
 public interface FacadeMetier {
 
-   void creerMusicien();
+   Musicien sauvegarderMusicien(Musicien musicienACreer) throws TableauUtilsException, FacadeMetierException;
 
-   Musicien[] supprimerMusicien(Musicien musicienASuppr, int index);
+   void supprimerMusicien(Musicien musicienASupprimer) throws FacadeMetierException;
 
-   void modifierMusicien();
+   Musicien modifierMusicien(Musicien musicienAModifier) throws FacadeMetierException;
 
-   Musicien[] afficherLesMusiciens();
+   Musicien[] recupererLesMusiciens();
 
-   void creerFan();
+   Fan sauvegarderFan(Fan fanACreer) throws FacadeMetierException;
 
-   void creerConcert();
+   Concert creerConcert(Concert concertACreer) throws FacadeMetierException;
 
-   void modifierConcert();
+   Concert modifierConcert(Concert concertAModifier) throws FacadeMetierException;
 
-   void annulerConcert();
+   void annulerConcert(Concert concertAAnnuler) throws FacadeMetierException;
 
-   Concert[] afficherTousLesConcert();
+   Concert[] recupererTousLesConcert();
 
 }

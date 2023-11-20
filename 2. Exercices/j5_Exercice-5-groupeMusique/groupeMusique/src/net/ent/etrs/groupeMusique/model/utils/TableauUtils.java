@@ -10,7 +10,9 @@ import java.util.Objects;
 /**
  * Ici nous regroupons les methode utilitaire pour de la manipulation de tableau
  */
-public class TableauUtils {
+public final class TableauUtils {
+    private TableauUtils() {
+    }
 
     //agrandir un tableau de plusieurs cases
 
@@ -21,7 +23,7 @@ public class TableauUtils {
      * @return le tableau agrandit
      * @throws TableauUtilsException dans le cas ou le tableau est NULL ou s'il y est impossible d'ajouter un élément.
      */
-    private Object[] augmenterTailleTableau(Object[] monTableau, int nbCase) throws TableauUtilsException {
+    public static Object[] augmenterTailleTableau(Object[] monTableau, int nbCase) throws TableauUtilsException {
         if(null == monTableau){
             throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NULL);
         }
@@ -33,7 +35,7 @@ public class TableauUtils {
     //réduire un tableau d'une case
 
 
-    private Object[] reduireTailleTableau(Object[] monTableau, int nbCase) throws TableauUtilsException {
+    public static Object[] reduireTailleTableau(Object[] monTableau, int nbCase) throws TableauUtilsException {
         if(null == monTableau){
             throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NULL);
         }
@@ -48,7 +50,7 @@ public class TableauUtils {
 
 
     // ajouter un élément au tableau
-    public void put(Object objet, Object[] letableau, boolean agrandirTableau) throws TableauUtilsException {
+    public static void put(Object objet, Object[] letableau, boolean agrandirTableau) throws TableauUtilsException {
         //verifier null
         if (Objects.isNull(objet) || Objects.isNull(letableau)) {
             throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NULL);
@@ -69,9 +71,31 @@ public class TableauUtils {
 
     }
 
-    // rétirer un élément du tableau
+    // retirer un élément du tableau
+    public static void retirerElementTableau(Object objet, Object[] leTableau) throws TableauUtilsException {
+        if (Objects.isNull(objet) || Objects.isNull(leTableau)) {
+            throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NULL);
+        }
+        if (!estDansTableau(objet, leTableau)) {
+            throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NON_PRESENT_DANS_TABLEAU);
+        }
+        leTableau[recupererIndexObjet(objet, leTableau)] = null;
+    }
 
-    private boolean possedePlaceTableau(Object[] monTableau) {
+    private static int recupererIndexObjet(Object objet, Object[] leTableau) throws TableauUtilsException {
+        // TODO Contrôle
+        if (Objects.isNull(objet) || Objects.isNull(leTableau)) {
+            throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NULL);
+        }
+        for (int i = 0; i < leTableau.length; i++) {
+            if (leTableau[i].equals(objet)) {
+                return i;
+            }
+        }
+        throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NON_PRESENT_DANS_TABLEAU);
+    }
+
+    private static boolean possedePlaceTableau(Object[] monTableau) {
         for (Object obj : monTableau) {
             if (null == obj){
                 return true;
@@ -80,7 +104,7 @@ public class TableauUtils {
         return false;
     }
 
-    private int placeDisponibleTableau(Object[] monTableau) {
+    private static int placeDisponibleTableau(Object[] monTableau) {
         boolean retour = false;
         int cpt = 0;
         do{
@@ -94,5 +118,15 @@ public class TableauUtils {
         return cpt;
     }
 
-
+    private static boolean estDansTableau(Object objet, Object[] leTableau) throws TableauUtilsException {
+        if (Objects.isNull(objet) || Objects.isNull(leTableau)) {
+            throw new TableauUtilsException(ConstanteUtils.TABLEAU_UTILS_OBJECT_NULL);
+        }
+        for (Object o: leTableau) {
+            if (o.equals(objet)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
