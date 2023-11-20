@@ -83,7 +83,6 @@ public abstract class Personne {
         if(Objects.isNull(sexe)){
             throw new PersonneException(ConstantesMetier.SEXE_IS_NULL);
         }
-
         this.sexe = sexe;
     }
 

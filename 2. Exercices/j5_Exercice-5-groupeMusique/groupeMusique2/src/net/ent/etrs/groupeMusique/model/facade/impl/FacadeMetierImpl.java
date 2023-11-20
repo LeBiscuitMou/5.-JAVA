@@ -82,7 +82,7 @@ public class FacadeMetierImpl implements FacadeMetier {
         try {
             //Supprimer l'existant
             annulerConcert(concert);
-            //Ajouter le modifier
+            //Ajouter le modifié
             return creerConcert(concert);
         } catch (FacadeMetierException e) {
             throw new FacadeMetierException(ConstantesMetier.FACADE_ERROR_MODIFY_CONCERT, e);

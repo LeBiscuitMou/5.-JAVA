@@ -41,6 +41,10 @@ public final class ConstantesMetier {
     public static final String FACTORY_CONCERT_ERROR = "ERR: Concert non crée.";
     public static final String CONCERT_TYPE_CONCERT_NULL = "ERR: Le type de concert est null";
     public static final String CONCERT_ERROR_LIEU_NULL = "ERR: Le lieu du concert est null";
+    public static final String MUSICIEN_ERROR_NOM_ARTISTE_NULL = "ERR: Le nom d'artiste est null";
+    public static final String MUSICIEN_ERROR_NOM_ARTISTE_BLANK = "ERR: Le nom d'artiste est vide";
+    public static final int NOM_ARTISTE_LONGUEUR_MAX = 30;
+    public static final String MUSICIEN_ERROR_NOM_ARTISTE_TOO_LONG = "La longueur du nom d'artiste doit être inférieur à " + NOM_ARTISTE_LONGUEUR_MAX;
 
     private ConstantesMetier() {
     }

@@ -14,7 +14,7 @@ public class Musicien extends Personne{
     private Materiel[] materiels = new Materiel[0];
 
 
-    protected Musicien(String nom, String prenom, Sexe sexe, String nomArtiste, LocalDate laDateNaissance) throws PersonneException {
+    protected Musicien(String nom, String prenom, Sexe sexe, String nomArtiste, LocalDate laDateNaissance) throws PersonneException, MusicienException {
         super(nom, prenom, sexe, laDateNaissance);
         this.setNomArtiste(nomArtiste);
     }
@@ -27,10 +27,17 @@ public class Musicien extends Personne{
         return Arrays.copyOf(materiels, materiels.length);
     }
 
-
-
-    private void setNomArtiste(String nomArtiste) throws PersonneException {
-       //todo
+    private void setNomArtiste(String nomArtiste) throws MusicienException {
+        if (Objects.isNull(nomArtiste)) {
+            throw new MusicienException(ConstantesMetier.MUSICIEN_ERROR_NOM_ARTISTE_NULL);
+        }
+        if (nomArtiste.isBlank()) {
+            throw new MusicienException(ConstantesMetier.MUSICIEN_ERROR_NOM_ARTISTE_BLANK);
+        }
+        if (nomArtiste.length() > ConstantesMetier.NOM_ARTISTE_LONGUEUR_MAX) {
+            throw new MusicienException(ConstantesMetier.MUSICIEN_ERROR_NOM_ARTISTE_TOO_LONG);
+        }
+        this.nomArtiste = nomArtiste;
     }
 
     protected void ajouterMateriel(Materiel materiel) throws MusicienException {
