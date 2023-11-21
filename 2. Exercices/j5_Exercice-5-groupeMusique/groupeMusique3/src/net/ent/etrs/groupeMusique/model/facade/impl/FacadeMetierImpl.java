@@ -36,7 +36,7 @@ public class FacadeMetierImpl implements FacadeMetier {
         try {
             TableauUtils.retirerElementTableau(this.lesMusiciens,musicienASupprimer);
         } catch (TableauUtilsException e) {
-            throw new FacadeMetierException(ConstantesMetier.FACADE_ERROR_DELETE_MUSICIEN,e);
+            throw new FacadeMetierException(ConstantesMetier.FACADE_ERROR_DELETE_MUSICIEN, e);
         }
     }
 
