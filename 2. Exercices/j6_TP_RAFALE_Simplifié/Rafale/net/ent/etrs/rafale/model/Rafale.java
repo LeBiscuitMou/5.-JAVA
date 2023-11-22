@@ -92,6 +92,15 @@ public abstract class Rafale {
         return Objects.hash(identificationRafale);
     }
 
+    @Override
+    public String toString() {
+        return "Rafale{" +
+                "identificationRafale='" + identificationRafale + '\'' +
+                ", carburantInterne=" + carburantInterne +
+                ", nombrePilote=" + nombrePilote +
+                '}';
+    }
+
     public abstract void ajouterMissileAA(MissileAA missileAA) throws RafaleAirException;
 
     public abstract void ajouterBombe(Bombe bombe) throws RafaleAirException;

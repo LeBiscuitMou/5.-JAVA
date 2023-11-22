@@ -1,0 +1,90 @@
+@startuml
+class model.entities.FabriqueMetier {
++ {static} Carte fabriquerCarte()
++ {static} ChasseAuTresor fabriquerChasseauTresor()
++ {static} Coordonnee fabriquerCoordonnee(int,int)
++ {static} Deplacant fabriquerUnJoueur(String,int,int)
+}
+class model.entities.ChasseAuTresor {
+- Carte laCarte
+- Deplacant[] tabJoueurs
+---
++ Carte ()
+- void initialiserLeJeu()
+
++ boolean equals(Object)
++ int hashCode()
+}
+class model.entities.Coordonnee {
+- int y
+- int x
+---
++ Cooroonnee(int y, int x)
+- void isCorrect(int)
+
++ boolean equals(Object)
++ int hashCode()
+}
+
+class model.entities.Carte {
+- char[][] grille
+---
++ Carte()
+- void initialiserContenu()
+
++ boolean equals(Object)
++ int hashCode()
+
++ boolean isPiegeAt(int,int)
++ boolean isTresorAt(int,int)
++ Coordonnee getCoordonneeTresor()
+}
+
+interface model.entities.Deplacant {
+~ void descendreUneLigne()
+~ void monterUneLigne()
+~ void seDeplacer(boolean)
+}
+class model.entities.Joueur {
+- int nbpas
+- Coordonnee coord
+---
++ Joueur(String ident,int pv, Coordonnee coord)
+
++ String toString()
++ void descendreUneLigne()
++ void monterUneLigne()
++ void seDeplacer(boolean)
+}
+abstract class model.entities.AbstractPersonne {
+- String identite
+- int ptVie
+---
++ AbstractPersonne(String identite,int pv)
+
++ {abstract} void descendreUneLigne()
++ {abstract} void monterUneLigne()
++ {abstract} void seDeplacer(boolean)
++ void recevoirDegat()
+
++ boolean equals(Object)
++ int hashCode()
+}
+
+class model.FacadeMetier{
+-ChasseAuTresor laChasse
+---
++ FacadeMetier()
+- intialiserLeJeu()
+}
+
+'' LES RELATIONS----------------------------------------------
+model.entities.AbstractPersonne <|-- model.entities.Joueur
+model.entities.Deplacant <|.. model.entities.AbstractPersonne
+model.entities.Joueur-->"..1coord"model.entities.Coordonnee
+
+model.entities.ChasseAuTresor-->"0..1 laCarte"model.entities.Carte
+model.entities.Deplacant"0..* \ntabJoueurs"<--o model.entities.ChasseAuTresor
+
+model.entities.ChasseAuTresor"0..1\nlschasse"<--model.FacadeMetier
+@enduml
