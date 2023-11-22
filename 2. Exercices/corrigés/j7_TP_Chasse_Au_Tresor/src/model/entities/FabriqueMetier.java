@@ -47,9 +47,9 @@ public final class FabriqueMetier {
     public static Deplacant fabriquerUnJoueur(String ident, int noJoueur) throws CoordonneeException, JoueurException, AbstractPersonneException {
         Coordonnee c =null;
         if(noJoueur==0){
-            c= fabriquerCoordonnee(C.MIN,C.MIN);
+            c = fabriquerCoordonnee(C.MIN,C.MIN);
         }else {
-           c= fabriquerCoordonnee(C.DIM-1,C.DIM-1);
+           c = fabriquerCoordonnee(C.DIM-1,C.DIM-1);
         }
         return new Joueur(ident,c);
     }

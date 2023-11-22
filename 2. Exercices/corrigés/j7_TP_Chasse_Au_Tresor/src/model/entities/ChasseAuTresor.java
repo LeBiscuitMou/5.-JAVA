@@ -59,6 +59,6 @@ public class ChasseAuTresor {
 
 
     public Deplacant[] getTabJoueurs() {
-        return tabJoueurs;
+        return Arrays.copyOf(this.tabJoueurs, this.tabJoueurs.length);
     }
 }
