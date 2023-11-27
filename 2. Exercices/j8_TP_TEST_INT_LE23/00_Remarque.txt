@@ -1,0 +1,30 @@
+Général
+Bien lire et cerné le sujet
+
+Entitées
+
+Les test dans les Setter concernent uniquement ce qui est en paramètre
+Constructeur en protected
+Setter qui permettent l'identité en private
+Affecter vos listes ( = new ArrayList<>() )
+Aucun Setter pour des Collections (Tableaux / List etc...)
+Les Getters de List renvoi des Collections.unmodifiableList()
+Utiliser les Setter dans les constructeurs !!
+methode toString() est a @Override dans toutes les classes Entitées 
+tous les attributs doivent être private
+Nom de class sans accent
+
+Enum complexe, il faut penser a affecter un variable private dans le constructeur et mettre un Getter
+
+Constantes avec un constructeur private
+
+Factory avec un constructeur private
+
+Exception OK
+
+Métier :
+
+Incompréhension :
+UV est valide
+Matière est valide
+Pas d'hértitage entre Matière et Cours
