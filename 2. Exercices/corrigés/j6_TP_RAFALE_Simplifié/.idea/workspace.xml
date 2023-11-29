@@ -5,58 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="811364aa-783e-46c1-98d9-eb3a35ffbba8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/rafale.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j7_TP_Chasse_Au_Tresor/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j7_TP_Chasse_Au_Tresor/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j7_TP_Chasse_Au_Tresor/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j7_TP_Chasse_Au_Tresor/src/model/entities/ChasseAuTresor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../j7_TP_Chasse_Au_Tresor/src/model/entities/ChasseAuTresor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j7_TP_Chasse_Au_Tresor/src/model/entities/FabriqueMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../j7_TP_Chasse_Au_Tresor/src/model/entities/FabriqueMetier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/.idea/Rafale.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/EntitiesFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/Rafale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/RafaleAir.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/exceptions/FactoryException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/exceptions/RafaleAirException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/exceptions/RafaleException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/facade/FacadeMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/facade/exceptions/FacadeFactoryException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/facade/exceptions/FacadeMetierException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/facade/factory/FacadeFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/facade/impl/FacadeMetierImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/references/Bombe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/references/CodeOTAN.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/references/ConstantesMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/references/MissileAA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/utils/AffichageConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/model/utils/LectureConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/start/Lanceur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/Rafale/net/ent/etrs/rafale/start/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/ChasseAuTresor.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/FacadeMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/entities/AbstractPersonne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/entities/Carte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/entities/ChasseAuTresor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/entities/Coordonnee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/entities/Deplacant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/entities/FabriqueMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/entities/Joueur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/exceptions/AbstractPersonneException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/exceptions/CarteException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/exceptions/ChasseAuTresorException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/exceptions/CoordonneeException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/exceptions/JoueurException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/references/C.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/model/references/TypeCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../j7_TP_Chasse_Au_Tresor/ChasseAuTresor/src/net/ent/etrs/tresor/view/ihm/OutilsIhm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/a_Fournir/ConstantesMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../j6_TP_RAFALE_Simplifié/a_Fournir/ConstantesMetier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/projet/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/projet/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/projet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/projet/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/projet/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/projet/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +22,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2YXFCMeKWct0syg843jcGluboqH" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -80,12 +36,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/corrigés/j6_TP_RAFALE_Simplifié",
+    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/j10_tp_Exemple_Personne/exemplePersonne",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -98,6 +54,9 @@
       <option name="presentableId" value="Default" />
       <updated>1698136262737</updated>
       <workItem from="1700663892339" duration="4171000" />
+      <workItem from="1701246372494" duration="2399000" />
+      <workItem from="1701253828523" duration="622000" />
+      <workItem from="1701259896520" duration="25000" />
     </task>
     <servers />
   </component>
