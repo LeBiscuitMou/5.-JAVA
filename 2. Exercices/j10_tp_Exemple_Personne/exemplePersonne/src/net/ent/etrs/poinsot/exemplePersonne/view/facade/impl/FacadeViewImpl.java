@@ -21,5 +21,6 @@ public class FacadeViewImpl implements FacadeView {
         } catch (EntitiesFactoryException e) {
             AffichageConsole.afficherErreur(e.getMessage());
         }
+        return null;
     }
 }
