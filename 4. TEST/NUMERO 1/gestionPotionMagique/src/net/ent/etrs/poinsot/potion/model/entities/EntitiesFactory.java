@@ -13,6 +13,10 @@ public final class EntitiesFactory {
         return new Ingredient(nom, estMagique, poids, nature);
     }
 
+    public static Potion fabriquerPotion(String nom, int volume, Contenant contenant) throws PotionException {
+        // TODO
+    }
+
     public static PotionAmelioration fabriquerPotionAmelioration(String nom, int volume, Contenant contenant) throws PotionException {
         return new PotionAmelioration(nom, volume, contenant);
     }
