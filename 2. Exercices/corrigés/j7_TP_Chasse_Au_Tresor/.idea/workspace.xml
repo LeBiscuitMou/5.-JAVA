@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1f82f0-140d-45d0-a6d6-ff6a0f63322b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j8_TP_TEST_INT_LE23/gestionFormation/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j8_TP_TEST_INT_LE23/gestionFormation/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j8_TP_TEST_INT_LE23/gestionFormation/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j8_TP_TEST_INT_LE23/gestionFormation/.idea/uiDesigner.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="8b1f82f0-140d-45d0-a6d6-ff6a0f63322b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/corrigés/j7_TP_Chasse_Au_Tresor",
+    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/corrigés/j6_TP_RAFALE_Simplifié",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +49,7 @@
       <workItem from="1700666832850" duration="13000" />
       <workItem from="1701072552641" duration="18000" />
       <workItem from="1701074153158" duration="3270000" />
+      <workItem from="1701423900501" duration="1270000" />
     </task>
     <servers />
   </component>
