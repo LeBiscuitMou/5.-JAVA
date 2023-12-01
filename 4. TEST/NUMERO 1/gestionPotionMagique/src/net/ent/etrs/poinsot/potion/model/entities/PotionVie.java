@@ -1,6 +1,7 @@
 package net.ent.etrs.poinsot.potion.model.entities;
 
 import net.ent.etrs.poinsot.potion.model.entities.exceptions.PotionException;
+import net.ent.etrs.poinsot.potion.model.references.ConstanteMetier;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,15 +20,24 @@ public class PotionVie extends Potion {
     }
 
     @Override
-    public int effetPotion() {
+    public int effetPotion() throws PotionException {
+        if (!estFinie()) {
+            throw new PotionException(ConstanteMetier.POTION_NON_TERMINEE);
+        }
         Random r = new Random();
-        int nbMagique = 0;
+        int nbIngMagique = 0;
+
         for (Ingredient i : this.lesIngredients) {
             if (i.isEstMagique()) {
-                nbMagique++;
+                nbIngMagique++;
             }
         }
 
-        return r.nextInt(50, 100) * this.getVolume() * (nbMagique + 1);
+        return r.nextInt(50, 100) * this.getVolume() * (nbIngMagique + 1);
+    }
+
+    @Override
+    public boolean estFinie() {
+        return this.lesIngredients.size() == 3;
     }
 }

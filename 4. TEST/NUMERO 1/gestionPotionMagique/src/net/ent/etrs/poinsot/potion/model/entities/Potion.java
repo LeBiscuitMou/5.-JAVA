@@ -77,5 +77,6 @@ public abstract class Potion {
                 '}';
     }
 
-    public abstract int effetPotion();
+    public abstract int effetPotion() throws PotionException;
+    public abstract boolean estFinie();
 }

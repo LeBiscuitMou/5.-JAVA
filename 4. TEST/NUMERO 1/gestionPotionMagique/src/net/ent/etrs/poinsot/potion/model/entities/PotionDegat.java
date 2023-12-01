@@ -11,4 +11,9 @@ public class PotionDegat extends Potion {
     public int effetPotion() {
         return 0;
     }
+
+    @Override
+    public boolean estFinie() {
+        return false;
+    }
 }

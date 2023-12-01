@@ -19,6 +19,7 @@ public final class ConstanteMetier {
     public static final String POTION_NOT_EXIST = "ERREUR : La potion à supprimer n'existe pas";
     public static final String INGREDIENT_EXISTE_DEJA = "ERREUR : L'ingrédient que vous voulez ajouter existe déjà";
     public static final String POTION_EXISTE_DEJA = "ERREUR : La potion que vous voulez créer existe déjà";
+    public static final String POTION_NON_TERMINEE = "ERREUR : Impossible d'afficher les effets tant que la potion n'est pas finie";
 
     private ConstanteMetier() {
     }
