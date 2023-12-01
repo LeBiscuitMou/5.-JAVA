@@ -1,7 +1,7 @@
 package net.ent.etrs.poinsot.potion.model.entities;
 
 import net.ent.etrs.poinsot.potion.model.entities.exceptions.IngredientException;
-import net.ent.etrs.poinsot.potion.model.entities.references.Nature;
+import net.ent.etrs.poinsot.potion.model.references.Nature;
 import net.ent.etrs.poinsot.potion.model.references.ConstanteMetier;
 
 import java.util.Objects;

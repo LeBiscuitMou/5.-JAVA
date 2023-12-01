@@ -1,8 +1,9 @@
 package net.ent.etrs.poinsot.potion.model.entities;
 
+import net.ent.etrs.poinsot.potion.model.entities.exceptions.ContenantException;
 import net.ent.etrs.poinsot.potion.model.entities.exceptions.IngredientException;
 import net.ent.etrs.poinsot.potion.model.entities.exceptions.PotionException;
-import net.ent.etrs.poinsot.potion.model.entities.references.Nature;
+import net.ent.etrs.poinsot.potion.model.references.Nature;
 
 public final class EntitiesFactory {
     private EntitiesFactory() {
@@ -22,5 +23,9 @@ public final class EntitiesFactory {
 
     public static PotionVie fabriquerPotionVie(String nom, int volume, Contenant contenant) throws PotionException {
         return new PotionVie(nom, volume, contenant);
+    }
+
+    public static Contenant fabriquerContenant(String nom, int volume) throws ContenantException {
+        return new Contenant(nom, volume);
     }
 }

@@ -6,4 +6,9 @@ public class PotionDegat extends Potion {
     public PotionDegat(String nom, int volume, Contenant contenant) throws PotionException {
         super(nom, volume, contenant);
     }
+
+    @Override
+    public int effetPotion() {
+        return 0;
+    }
 }

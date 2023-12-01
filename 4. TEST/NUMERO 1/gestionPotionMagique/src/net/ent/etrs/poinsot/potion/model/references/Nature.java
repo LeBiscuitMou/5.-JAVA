@@ -1,4 +1,4 @@
-package net.ent.etrs.poinsot.potion.model.entities.references;
+package net.ent.etrs.poinsot.potion.model.references;
 
 public enum Nature {
     LIQUIDE,

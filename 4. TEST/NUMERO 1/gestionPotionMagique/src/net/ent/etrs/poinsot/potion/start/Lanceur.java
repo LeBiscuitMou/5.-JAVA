@@ -7,6 +7,8 @@ import net.ent.etrs.poinsot.potion.presenteur.exceptions.PresenteurException;
 import net.ent.etrs.poinsot.potion.view.facade.FacadeView;
 import net.ent.etrs.poinsot.potion.view.facade.impl.FactoryFacadeView;
 
+import java.util.Random;
+
 public class Lanceur {
     public static void main(String[] args) {
         Presenteur p = null;

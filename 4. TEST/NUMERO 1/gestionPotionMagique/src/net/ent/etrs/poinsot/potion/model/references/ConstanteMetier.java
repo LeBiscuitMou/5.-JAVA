@@ -12,6 +12,13 @@ public final class ConstanteMetier {
     public static final String POTION_CONTENANT_IS_NULL = "ERREUR : Le contenant de la potion ne peut pas être NULL";
     public static final String CONTENANT_NOM_IS_NULL = "ERREUR : Le nom du contenant ne peut pas être NULL";
     public static final String CONTENANT_NOM_IS_BLANK = "ERREUR : Le nom du contenant ne peut pas être vide";
+    public static final String INGREDIENT_IS_NULL = "ERREUR : L'ingredient ne peut pas être NULL";
+    public static final String POTION_IS_NULL = "ERREUR : La potion ne peut pas être NULL";
+    public static final String LISTE_POTIONS_VIDE = "ERREUR : La liste de potions est vide";
+    public static final String INGREDIENT_NOT_EXIST = "ERREUR : L'ingredient à supprimer n'existe pas";
+    public static final String POTION_NOT_EXIST = "ERREUR : La potion à supprimer n'existe pas";
+    public static final String INGREDIENT_EXISTE_DEJA = "ERREUR : L'ingrédient que vous voulez ajouter existe déjà";
+    public static final String POTION_EXISTE_DEJA = "ERREUR : La potion que vous voulez créer existe déjà";
 
     private ConstanteMetier() {
     }

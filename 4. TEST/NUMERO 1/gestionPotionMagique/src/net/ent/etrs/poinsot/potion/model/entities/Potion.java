@@ -76,4 +76,6 @@ public abstract class Potion {
                 ", contenant=" + contenant +
                 '}';
     }
+
+    public abstract int effetPotion();
 }
