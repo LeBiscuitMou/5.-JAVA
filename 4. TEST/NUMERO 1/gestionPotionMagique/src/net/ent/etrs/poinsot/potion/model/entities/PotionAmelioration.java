@@ -2,7 +2,12 @@ package net.ent.etrs.poinsot.potion.model.entities;
 
 import net.ent.etrs.poinsot.potion.model.entities.exceptions.PotionException;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PotionAmelioration extends Potion {
+    List<Ingredient> lesIngredients = new ArrayList<>();
+
     public PotionAmelioration(String nom, int volume, Contenant contenant) throws PotionException {
         super(nom, volume, contenant);
     }
@@ -14,7 +19,7 @@ public class PotionAmelioration extends Potion {
 
     @Override
     public boolean estFinie() {
-        return false;
+        return lesIngredients.size() == 5;
     }
 
     @Override
