@@ -1,6 +1,8 @@
 package net.ent.etrs.poinsot.potion.model.entities;
 
+import net.ent.etrs.poinsot.potion.model.entities.exceptions.PotionDegatException;
 import net.ent.etrs.poinsot.potion.model.entities.exceptions.PotionException;
+import net.ent.etrs.poinsot.potion.model.entities.exceptions.PotionVieException;
 import net.ent.etrs.poinsot.potion.model.references.ConstanteMetier;
 
 import java.util.ArrayList;
@@ -12,6 +14,7 @@ public abstract class Potion {
     private String nom;
     private int volume;
     private Contenant contenant;
+    private List<Ingredient> lesIngredients = new ArrayList<>();
 
     public Potion(String nom, int volume, Contenant contenant) throws PotionException {
         this.setNom(nom);
@@ -41,6 +44,9 @@ public abstract class Potion {
         if (volume < 0) {
             throw new PotionException(ConstanteMetier.POTION_VOLUME_IS_NEGATIVE);
         }
+        if (volume > contenant.getVolume()) {
+            throw new PotionException(ConstanteMetier.POTION_VOLUME_SUPERIEUR_CONTENANT);
+        }
         this.volume = volume;
     }
 
@@ -53,6 +59,10 @@ public abstract class Potion {
             throw new PotionException(ConstanteMetier.POTION_CONTENANT_IS_NULL);
         }
         this.contenant = contenant;
+    }
+
+    public List<Ingredient> getLesIngredients() {
+        return Collections.unmodifiableList(lesIngredients);
     }
 
     @Override
@@ -77,6 +87,16 @@ public abstract class Potion {
                 '}';
     }
 
-    public abstract int effetPotion() throws PotionException;
+    public abstract int effetPotion() throws PotionVieException, PotionDegatException;
     public abstract boolean estFinie();
+
+    public void ajouterIngredient(Ingredient ingredient) throws PotionException {
+        if (Objects.isNull(ingredient)) {
+            throw new PotionException(ConstanteMetier.INGREDIENT_IS_NULL);
+        }
+        if (estFinie()) {
+            throw new PotionException(ConstanteMetier.POTION_TERMINEE);
+        }
+        this.lesIngredients.add(ingredient);
+    }
 }

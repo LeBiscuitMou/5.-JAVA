@@ -16,4 +16,9 @@ public class PotionAmelioration extends Potion {
     public boolean estFinie() {
         return false;
     }
+
+    @Override
+    public void ajouterIngredient(Ingredient ingredient) throws PotionException {
+        super.ajouterIngredient(ingredient);
+    }
 }

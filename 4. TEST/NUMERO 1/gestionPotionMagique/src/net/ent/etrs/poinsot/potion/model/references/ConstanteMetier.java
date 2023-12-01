@@ -20,6 +20,8 @@ public final class ConstanteMetier {
     public static final String INGREDIENT_EXISTE_DEJA = "ERREUR : L'ingrédient que vous voulez ajouter existe déjà";
     public static final String POTION_EXISTE_DEJA = "ERREUR : La potion que vous voulez créer existe déjà";
     public static final String POTION_NON_TERMINEE = "ERREUR : Impossible d'afficher les effets tant que la potion n'est pas finie";
+    public static final String POTION_TERMINEE = "ERREUR : La potion est terminée, pas besoin d'ajouter des ingrédients";
+    public static final String POTION_VOLUME_SUPERIEUR_CONTENANT = "ERREUR : Le volume de la potion ne peut pas être supérieur au contenant";
 
     private ConstanteMetier() {
     }
