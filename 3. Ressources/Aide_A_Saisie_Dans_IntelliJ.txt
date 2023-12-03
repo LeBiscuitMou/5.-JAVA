@@ -1,0 +1,10 @@
+
+https://blog.jetbrains.com/fr/idea/category/tips-tricks/
+
+https://blog.jetbrains.com/fr/idea/2022/12/selection-de-raccourcis-clavier-pour-intellij-idea-qui-gagnent-a-etre-connus/
+
+
+
+
+Faire ses propres abréviations : 
+File > Settings > Editor > Live Templates

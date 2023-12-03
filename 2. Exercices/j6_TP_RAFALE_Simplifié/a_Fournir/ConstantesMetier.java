@@ -1,4 +1,4 @@
-package net.ent.etrs.gestionrafale.model.references;
+package net.ent.etrs.poinsot.rafale.model.references;
 
 public final class ConstantesMetier {
 
