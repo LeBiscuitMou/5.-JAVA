@@ -12,7 +12,7 @@ public interface FacadeView {
     Ingredient creerUnIngredient() throws FacadeViewException;
     Ingredient selectionnerIngredient(List<Ingredient> lesIngredients) throws FacadeViewException;
     void afficherMenuPrincipal(List<String> menu);
-    Potion creerUnePotion();
+    Potion creerUnePotion() throws FacadeViewException;
     void afficherToutesLesPotions(List<Potion> lesPotions);
     void afficherMessageErreur(String message);
     Potion ajouterUnIngredient(Potion potion, Ingredient ingredient);

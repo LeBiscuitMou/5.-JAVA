@@ -1,9 +1,11 @@
 package net.ent.etrs.poinsot.potion.view.facade.impl;
 
+import net.ent.etrs.poinsot.potion.model.entities.Contenant;
 import net.ent.etrs.poinsot.potion.model.entities.EntitiesFactory;
 import net.ent.etrs.poinsot.potion.model.entities.Ingredient;
 import net.ent.etrs.poinsot.potion.model.entities.Potion;
 import net.ent.etrs.poinsot.potion.model.entities.exceptions.IngredientException;
+import net.ent.etrs.poinsot.potion.model.entities.exceptions.PotionException;
 import net.ent.etrs.poinsot.potion.model.references.Nature;
 import net.ent.etrs.poinsot.potion.view.commons.utils.AffichageConsole;
 import net.ent.etrs.poinsot.potion.view.commons.utils.LectureConsole;
@@ -58,8 +60,15 @@ public class FacadeViewImpl implements FacadeView {
     }
 
     @Override
-    public Potion creerUnePotion() {
-        return null;
+    public Potion creerUnePotion() throws FacadeViewException {
+        String nom = LectureConsole.lectureChaineCaracteres("Saisir le nom de la potion");
+        int volume = LectureConsole.lectureEntier("Saisir le volume de la potion");
+        Contenant contenant = null;
+        try {
+            return EntitiesFactory.fabriquerPotion(nom, volume, contenant);
+        } catch (PotionException e) {
+            throw new FacadeViewException(ConstanteView.FACADE_IMPOSSIBLE_CREER_POTION);
+        }
     }
 
     @Override

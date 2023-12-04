@@ -6,6 +6,7 @@ public final class ConstanteView {
     public static final String FACADE_IMPOSSIBLE_CREER_INGREDIENT = "ERREUR : Impossible de créer l'ingrédient";
     public static final String FACADE_AUCUN_INGREDIENTS = "ERREUR : Il n'y a aucun ingrédients dans la liste";
     public static final String FACADE_AUCUNE_POTION = "ERREUR : Il n'y a aucune potion dans la liste";
+    public static final String FACADE_IMPOSSIBLE_CREER_POTION = "ERREUR : Impossible de créer la potion";
 
     private ConstanteView() {
     }
