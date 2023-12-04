@@ -3,8 +3,10 @@ package net.ent.etrs.vehicule.model.dao.impl;
 import net.ent.etrs.vehicule.model.dao.IDAOVehicule;
 import net.ent.etrs.vehicule.model.dao.impl.exceptions.DAOVehiculeImplMemException;
 import net.ent.etrs.vehicule.model.entities.Vehicule;
+import net.ent.etrs.vehicule.model.facade.exceptions.FacadeException;
 import net.ent.etrs.vehicule.model.references.ConstantesMetier;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -63,5 +65,30 @@ public class DAOVehiculeImplMem implements IDAOVehicule {
             }
         }
         throw new DAOVehiculeImplMemException(ConstantesMetier.DAO_VEHICULE_NON_TROUVE);
+    }
+
+    @Override
+    public List<Vehicule> recupererVehiculeSortieAvantDate(LocalDate dateATester) throws DAOVehiculeImplMemException {
+        if (Objects.isNull(dateATester)) {
+            throw new DAOVehiculeImplMemException(ConstantesMetier.DATE_DE_SORTIE_NULL);
+        }
+        List<Vehicule> resultatVehicule = new ArrayList<>();
+        for (Vehicule v : persistanceListeDeVehicule) {
+            if (v.getDateDeSortie().isBefore(dateATester)) {
+                resultatVehicule.add(v);
+            }
+        }
+        return resultatVehicule;
+    }
+
+    @Override
+    public List<Vehicule> recupererVehiculeConsoSupA(float consoATester) {
+        List<Vehicule> resultatVehicule = new ArrayList<>();
+        for (Vehicule v : persistanceListeDeVehicule) {
+            if (v.getConsomation() > consoATester) {
+                resultatVehicule.add(v);
+            }
+        }
+        return resultatVehicule;
     }
 }

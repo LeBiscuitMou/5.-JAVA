@@ -58,27 +58,15 @@ public class FacadeMetierImpl implements net.ent.etrs.vehicule.model.facade.Faca
         if (Objects.isNull(dateATester)) {
             throw new FacadeException(ConstantesMetier.DATE_DE_SORTIE_NULL);
         }
-        List<Vehicule> resultatVehicule = new ArrayList<>();
-        for (Vehicule v : persistanceListeDeVehicule) {
-
-            if (v.getDateDeSortie().isBefore(dateATester)) {
-                resultatVehicule.add(v);
-            }
+        try {
+            dao.recupererVehiculeSortieAvantDate(dateATester);
+        } catch (DAOVehiculeImplMemException e) {
+            throw new FacadeException(ConstantesMetier.VEHICULE_NULL, e);
         }
-        return resultatVehicule;
     }
 
     @Override
     public List<Vehicule> vehiculeConsoSupA(float consoATester){
-        List<Vehicule> resultatVehicule = new ArrayList<>();
-        for (Vehicule v : persistanceListeDeVehicule) {
 
-            if (v.getConsomation() > consoATester) {
-                resultatVehicule.add(v);
-            }
-        }
-        return resultatVehicule;
     }
-
-
 }
