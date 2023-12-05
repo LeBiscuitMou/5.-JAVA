@@ -31,9 +31,16 @@ public final class TestMap {
     }
 
     private static Double calculerMoyenneEleve(Map<Matiere, List<Note>> map) {
+        double moyenne = 0;
         for (Map.Entry<Matiere, List<Note>> entry : map.entrySet()) {
+            Matiere matiere = entry.getKey();
+            List<Note> notes = entry.getValue();
 
+            double moyenneMatiere = calculerMoyenneMatiere(notes);
+
+            moyenne += moyenneMatiere;
         }
+        return moyenne / map.size();
     }
 
     private static Double calculerMoyenneMatiere(List<Note> noteList) {

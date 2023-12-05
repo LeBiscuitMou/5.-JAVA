@@ -5,7 +5,7 @@ import net.ent.etrs.poinsot.note.model.references.ConstanteMetier;
 
 import java.util.Objects;
 
-public class Eleve {
+public class Eleve implements Comparable<Eleve> {
     private String nid;
     private String nom;
     private String prenom;
@@ -78,5 +78,10 @@ public class Eleve {
                 ", nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Eleve o) {
+        return this.getNid().compareTo(o.getNid());
     }
 }
