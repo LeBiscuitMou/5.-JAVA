@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="40.0" y="199.0">net.ent.etrs.model.dao.BatimentDaoImpl</node>
+    <node x="-87.5" y="498.0">net.ent.etrs.model.dao.DaoFactory</node>
+    <node x="57.458515283842814" y="-146.14847161572055">net.ent.etrs.model.dao.BatimentDao</node>
+    <node x="379.62008733624475" y="-146.14847161572055">net.ent.etrs.model.dao.MaterielInformatiqueDao</node>
+    <node x="469.0" y="221.0">net.ent.etrs.model.dao.MaterielInformatiqueDaoImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.ent.etrs.model.dao.BatimentDaoImpl" target="net.ent.etrs.model.dao.BatimentDao" relationship="REALIZATION">
+      <point x="16.458515283842814" y="-133.0" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.dao.MaterielInformatiqueDaoImpl" target="net.ent.etrs.model.dao.MaterielInformatiqueDao" relationship="REALIZATION">
+      <point x="-89.37991266375525" y="-175.0" />
+      <point x="0.0" y="132.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.575091575091575" showDependencies="false" x="512.5" y="252.50000000000006" />
+  <SelectedNodes>
+    <node>net.ent.etrs.model.dao.DaoFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -4,6 +4,8 @@ import net.ent.etrs.vehicule.model.dao.IDAOVehicule;
 import net.ent.etrs.vehicule.model.dao.impl.DAOVehiculeImplMem;
 
 public final class DAOFactory {
+    private static IDAOVehicule idaoVehicule;
+
     private DAOFactory() {
     }
 
