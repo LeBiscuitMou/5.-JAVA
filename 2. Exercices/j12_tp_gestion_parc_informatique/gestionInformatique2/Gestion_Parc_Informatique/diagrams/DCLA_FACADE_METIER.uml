@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="115.0" y="0.0">net.ent.etrs.model.facade.FacadeMetier</node>
+    <node x="209.5" y="584.0">net.ent.etrs.model.facade.FacadeMetierFactory</node>
+    <node x="0.0" y="258.0">net.ent.etrs.model.facade.FacadeMetierImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.ent.etrs.model.facade.FacadeMetierFactory" target="net.ent.etrs.model.facade.FacadeMetierImpl">
+      <point x="-62.5" y="-38.5" />
+      <point x="272.0" y="559.0" />
+      <point x="219.5" y="559.0" />
+      <point x="0.0" y="138.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.facade.FacadeMetierImpl" target="net.ent.etrs.model.facade.FacadeMetier">
+      <point x="0.0" y="-138.0" />
+      <point x="219.5" y="233.0" />
+      <point x="224.75" y="233.0" />
+      <point x="-109.75" y="104.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.facade.FacadeMetierFactory" target="net.ent.etrs.model.facade.FacadeMetier">
+      <point x="62.5" y="-38.5" />
+      <point x="397.0" y="559.0" />
+      <point x="449.5" y="559.0" />
+      <point x="449.5" y="233.0" />
+      <point x="444.25" y="233.0" />
+      <point x="109.75" y="104.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="374.0" y="176.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="567.0" y="880.0">net.ent.etrs.model.entities.references.TypeReseau</node>
+    <node x="537.0" y="0.0">net.ent.etrs.model.entities.Piece</node>
+    <node x="0.0" y="581.0">net.ent.etrs.model.entities.references.TypeOrdinateur</node>
+    <node x="0.0" y="359.0">net.ent.etrs.model.entities.Ecran</node>
+    <node x="102.5" y="0.0">net.ent.etrs.model.entities.MaterielInformatique</node>
+    <node x="230.0" y="326.0">net.ent.etrs.model.entities.Ordinateur</node>
+    <node x="0.0" y="880.0">net.ent.etrs.model.entities.EntitiesFactory</node>
+    <node x="943.0" y="0.0">net.ent.etrs.model.entities.Batiment</node>
+    <node x="364.0" y="581.0">net.ent.etrs.model.entities.references.TailleEcran</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.ent.etrs.model.entities.Ecran" target="net.ent.etrs.model.entities.MaterielInformatique">
+      <point x="0.0" y="-72.0" />
+      <point x="105.0" y="301.0" />
+      <point x="167.75" y="301.0" />
+      <point x="-65.25" y="138.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.entities.Ordinateur" target="net.ent.etrs.model.entities.MaterielInformatique">
+      <point x="0.0" y="-105.0" />
+      <point x="361.0" y="301.0" />
+      <point x="298.25" y="301.0" />
+      <point x="65.25" y="138.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.557190635451505" x="589.0" y="527.4183673469388" />
+  <SelectedNodes>
+    <node>net.ent.etrs.model.entities.references.TypeReseau</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
