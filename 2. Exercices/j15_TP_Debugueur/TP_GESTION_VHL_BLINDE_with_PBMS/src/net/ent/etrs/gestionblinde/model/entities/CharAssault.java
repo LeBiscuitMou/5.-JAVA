@@ -46,8 +46,6 @@ public class CharAssault extends VehiculeBlinde{
         super.ajouterObus(lObus, 1);
     }
 
-
-
     @Override
     public String toString() {
         return "CharAssault{" +

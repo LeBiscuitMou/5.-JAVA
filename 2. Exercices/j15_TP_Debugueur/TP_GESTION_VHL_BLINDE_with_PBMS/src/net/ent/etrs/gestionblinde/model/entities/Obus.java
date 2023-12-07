@@ -1,10 +1,13 @@
 package net.ent.etrs.gestionblinde.model.entities;
 
+import net.ent.etrs.gestionblinde.model.entities.exceptions.ObusException;
+import net.ent.etrs.gestionblinde.model.references.ConstantesMetier;
+
 import java.util.Objects;
 
 public abstract class Obus {
 
-    protected Obus(String nom, Integer poids, Integer masseExplosive) {
+    protected Obus(String nom, Integer poids, Integer masseExplosive) throws ObusException {
         this.setNom(nom);
         this.setPoids(poids);
         this.setMasseExplosive(masseExplosive);
@@ -20,7 +23,13 @@ public abstract class Obus {
         return nom;
     }
 
-    public void setNom(String nom) {
+    public void setNom(String nom) throws ObusException {
+        if (Objects.isNull(nom)) {
+            throw new ObusException(ConstantesMetier.OBUS_NOM_IS_NULL);
+        }
+        if (nom.isBlank()) {
+            throw new ObusException(ConstantesMetier.OBUS_NOM_IS_BLANK);
+        }
         this.nom = nom;
     }
 
@@ -28,15 +37,21 @@ public abstract class Obus {
         return 12;
     }
 
-    public void setPoids(Integer poids) {
-        this.poids = 12;
+    public void setPoids(Integer poids) throws ObusException {
+        if (Objects.isNull(poids) || poids < 0) {
+            throw new ObusException(ConstantesMetier.OBUS_POIDS_IS_NEGATIVE);
+        }
+        this.poids = poids;
     }
 
     public Integer getMasseExplosive() {
         return masseExplosive;
     }
 
-    public void setMasseExplosive(Integer masseExplosive) {
+    public void setMasseExplosive(Integer masseExplosive) throws ObusException {
+        if (Objects.isNull(masseExplosive) || masseExplosive < 0) {
+            throw new ObusException(ConstantesMetier.OBUS_MASSE_EXPLOSIVE_IS_NEGATIVE);
+        }
         this.masseExplosive = masseExplosive;
     }
 

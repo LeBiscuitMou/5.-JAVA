@@ -57,7 +57,11 @@ public class Presenteur {
     }
 
     private static void supprimerVehicule() {
-        VehiculeBlinde vehiculeBlinde;
+        try {
+            facadeView.supprimerVehiculeBlinde(facadeMetier.selectionnerTousVehiculeBlinde());
+        } catch (FacadeException e) {
+            facadeView.afficherMessageErreur(e.getMessage());
+        }
     }
 
     private static void afficherToutLesVehicule() {

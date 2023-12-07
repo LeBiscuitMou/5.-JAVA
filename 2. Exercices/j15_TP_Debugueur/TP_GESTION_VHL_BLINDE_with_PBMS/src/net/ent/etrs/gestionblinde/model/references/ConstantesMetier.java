@@ -23,6 +23,10 @@ public final class ConstantesMetier {
     public static final String DAO_VHLB_IMPOSSIBLE_DELETE = "Impossible de supprimer le vehicule";
     public static final String VEHICULE_BLINDE_EMMAT_8_IS_NULL = "L'emmat ne peut pas être NULL";
     public static final String VEHICULE_BLINDE_EMMAT_8_IS_BLANK = "L'emmat ne peut pas être vide";
+    public static final String OBUS_NOM_IS_NULL = "Le nom de l'obus ne peut pas être NULL";
+    public static final String OBUS_NOM_IS_BLANK = "Le nom de l'obus ne peut pas être vide";
+    public static final String OBUS_POIDS_IS_NEGATIVE = "Le poids ne peut pas être négatif";
+    public static final String OBUS_MASSE_EXPLOSIVE_IS_NEGATIVE = "La masse ne peut pas être négatif";
 
     private ConstantesMetier() {
     }

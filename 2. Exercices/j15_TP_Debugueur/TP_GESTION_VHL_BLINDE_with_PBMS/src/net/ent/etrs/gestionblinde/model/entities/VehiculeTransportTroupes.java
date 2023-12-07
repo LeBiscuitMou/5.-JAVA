@@ -21,7 +21,7 @@ public class VehiculeTransportTroupes extends VehiculeBlinde{
         if (Objects.isNull(poids) || poids > ConstantesMetier.POIDS_MAX_VTT) {
             throw new VehiculeTransportTroupesException(ConstantesMetier.POIDS_VTT_INCORRECT);
         }
-
+        this.poids = poids;
     }
 
     public Integer getNbPersonnelEmbarque() {
