@@ -27,4 +27,8 @@ public final class EntitiesFactory {
     public static Obus fabriquerObus25(String nom, Integer poids, Integer masseExplosive) {
         return new Obus25(nom, poids, masseExplosive);
     }
+
+    public static Obus fabriquerObus120(String nom, Integer poids, Integer masseExplosive) {
+        return new Obus120(nom, poids, masseExplosive);
+    }
 }

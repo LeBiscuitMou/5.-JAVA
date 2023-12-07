@@ -27,7 +27,7 @@ public final class AffichageConsole {
      * @param msg Message à afficher.
      */
     public static void afficherMessageAvecSautLigne(final String msg) {
-        afficherMessageAvecSautLigne(msg);
+        System.out.println(msg);
     }
 
     /**

@@ -1,5 +1,7 @@
 package net.ent.etrs.gestionblinde.view.commons.utils;
 
+import net.ent.etrs.gestionblinde.view.commons.utils.AffichageConsole;
+
 import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -51,7 +53,7 @@ public final class LectureConsole {
                 System.out.println(message);
                 boucle = true;
             }
-        } while (!boucle);
+        } while (boucle);
 
         return choix;
     }

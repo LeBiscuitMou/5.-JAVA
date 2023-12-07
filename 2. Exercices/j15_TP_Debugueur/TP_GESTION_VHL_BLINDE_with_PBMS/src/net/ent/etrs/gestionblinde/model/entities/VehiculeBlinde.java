@@ -32,7 +32,13 @@ public abstract class VehiculeBlinde {
         return emmat8;
     }
 
-    private void setEmmat8(String emmat8) {
+    public void setEmmat8(String emmat8) throws VehiculeBlindeMetierException {
+        if (Objects.isNull(emmat8)) {
+            throw new VehiculeBlindeMetierException(ConstantesMetier.VEHICULE_BLINDE_EMMAT_8_IS_NULL);
+        }
+        if (emmat8.isBlank()) {
+            throw new VehiculeBlindeMetierException(ConstantesMetier.VEHICULE_BLINDE_EMMAT_8_IS_BLANK);
+        }
         this.emmat8 = emmat8;
     }
 
@@ -82,5 +88,26 @@ public abstract class VehiculeBlinde {
             retour += entry.getValue();
         }
         return retour;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        VehiculeBlinde that = (VehiculeBlinde) o;
+        return Objects.equals(emmat8, that.emmat8);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(emmat8);
+    }
+
+    @Override
+    public String toString() {
+        return "VehiculeBlinde{" +
+                "emmat8='" + emmat8 + '\'' +
+                ", poids=" + poids +
+                '}';
     }
 }

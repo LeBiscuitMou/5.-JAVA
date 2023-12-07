@@ -21,6 +21,8 @@ public final class ConstantesMetier {
     public static final String DAO_VHLB_IMPOSSIBLE_CREATE = "Impossible de créer le véhicule blindé";
     public static final String DAO_VHLB_IMPOSSIBLE_UPDATE = "Impossible de mettre a jour le Véhicule Blindé";
     public static final String DAO_VHLB_IMPOSSIBLE_DELETE = "Impossible de supprimer le vehicule";
+    public static final String VEHICULE_BLINDE_EMMAT_8_IS_NULL = "L'emmat ne peut pas être NULL";
+    public static final String VEHICULE_BLINDE_EMMAT_8_IS_BLANK = "L'emmat ne peut pas être vide";
 
     private ConstantesMetier() {
     }

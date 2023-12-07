@@ -16,7 +16,7 @@ public class DaoMetierVehiculeBlindeImpl implements DaoMetierVehiculeBlinde{
     public VehiculeBlinde create(VehiculeBlinde vhl) throws DaoMetierVehiculeBlindeException {
         if (!Objects.isNull(vhl)){
 
-            return persistance.get(persistance.indexOf(vhl));
+            return persistance.get(persistance.indexOf(vhl) + 1);
         }
         else {
             throw new DaoMetierVehiculeBlindeException(ConstantesMetier.DAO_VHLB_IMPOSSIBLE_CREATE);
