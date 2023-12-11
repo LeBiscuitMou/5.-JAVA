@@ -1,0 +1,26 @@
+Règles de base :
+•	Le code devra être entièrement documenté.
+•	Vous devez découper correctement votre code et interfacer les couches.
+•	Mettre en œuvre toutes les bonnes pratiques données en cours.
+•	Toutes les erreurs devront être remontées jusqu’à la vue.
+
+Contraintes Métiers :
+Pour les Jeux Vidéo:
+-	L’identité est basée sur le nom / date Sortie / studio de Dev.
+
+Pour les Consoles:
+-	L’identité est basée sur le nom et le fabriquant
+
+Pour les Fabriquants :
+-	L’identité est basée sur le nom.
+
+Menu :
+
+- Initialiser
+- creer une Console
+- creer un Fabriquant
+- creer un Jeu Video
+- ajouter une console a un jeu video
+- afficher les jeux video par un Genre --> trier par ordre naturel
+- afficher les jeux video par Console --> trier par Genre
+- afficher toutes les Consoles avec leurs jeux video

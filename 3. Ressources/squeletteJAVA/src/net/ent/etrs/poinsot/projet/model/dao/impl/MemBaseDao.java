@@ -38,7 +38,7 @@ public abstract class MemBaseDao<T extends AbstractEntity> implements BaseDao<T>
     }
 
     @Override
-    public Optional<T> find(Long id) throws DaoException {
+    public Optional<T> find(Long id) {
         return Optional.ofNullable(this.persist.get(id));
     }
 
@@ -48,22 +48,21 @@ public abstract class MemBaseDao<T extends AbstractEntity> implements BaseDao<T>
      * List<T> list = new ArrayList<>();
      * findAll().iterator().forEachRemaining(list::add);
      * @return un iterator contentant toutes les entités
-     * @throws DaoException exception
      */
     @Override
-    public Iterable<T> findAll() throws DaoException {
+    public Iterable<T> findAll() {
         return Collections.unmodifiableCollection(this.persist.values());
     }
 
 
 
     @Override
-    public void delete(Long id) throws DaoException {
+    public void delete(Long id) {
         this.persist.remove(id);
     }
 
     @Override
-    public void deleteAll() throws DaoException {
+    public void deleteAll() {
         this.persist.clear();
         sequence = 0L;
     }
@@ -74,7 +73,7 @@ public abstract class MemBaseDao<T extends AbstractEntity> implements BaseDao<T>
     }
 
     @Override
-    public long count() throws DaoException {
+    public long count() {
         return this.persist.size();
     }
 }
