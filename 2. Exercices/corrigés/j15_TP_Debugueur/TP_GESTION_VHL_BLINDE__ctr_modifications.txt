@@ -1,0 +1,30 @@
+
+Compteurs de modifications
+
+
+VehiculeBinde:
+ 2 supp
+ 1 modif
+
+VehiculeTransportTroupe:
+ 1 supp
+ 
+Obus:
+ 2 modif
+ 
+CharAssault:
+ 2 modif
+
+DaoMetierObusImpl
+ 1 supp
+ 1 modif
+
+DaoMetierVehiculeBlinde:
+ 1 supp
+ 3 modif
+
+AffichageConsole
+  1 modif
+  
+LectureConsole
+  1 modif

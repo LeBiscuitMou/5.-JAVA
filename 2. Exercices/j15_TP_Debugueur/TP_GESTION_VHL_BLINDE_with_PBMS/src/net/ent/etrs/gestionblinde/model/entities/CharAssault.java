@@ -29,7 +29,7 @@ public class CharAssault extends VehiculeBlinde{
 
     @Override
     protected void setPoids(Integer poids) throws CharAssaultMetierException {
-        if (Objects.isNull(poids) && poids > ConstantesMetier.POIDS_MAX_CA){
+        if (Objects.isNull(poids) || poids > ConstantesMetier.POIDS_MAX_CA){
             throw new CharAssaultMetierException(ConstantesMetier.POIDS_CA_INCORRECT);
         }
         this.poids = poids;

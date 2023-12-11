@@ -1,0 +1,75 @@
+package net.ent.etrs.model.entities;
+
+import net.ent.etrs.model.comparator.ComparatorMatiere;
+import net.ent.etrs.model.references.Constantes;
+import net.ent.etrs.model.references.Matiere;
+
+import java.text.DecimalFormat;
+import java.util.*;
+
+public class TestMap {
+    private final Map<Eleve, Map<Matiere, List<Note>>> maMap;
+
+    public TestMap() {
+        maMap = new TreeMap<>();
+    }
+
+    public void main() {
+        afficher();
+    }
+
+    private void afficher(){
+        DecimalFormat f = new DecimalFormat();
+        f.setMaximumFractionDigits(4);
+        initialiserMapEleve();
+        for (Map.Entry<Eleve, Map<Matiere, List<Note>>> mapEntry : maMap.entrySet()){
+            System.out.println(mapEntry.getKey().toString() + " " + f.format(calculerMoyenneEleve(mapEntry.getValue())));
+            for (Map.Entry<Matiere, List<Note>> entry : mapEntry.getValue().entrySet()){
+                System.out.println('\t'+entry.getKey().toString() + " : " + f.format(calculerMoyenneMatiere(entry.getValue())));
+                for(Note note : entry.getValue()){
+                    System.out.println('\t'+'\t'+f.format(note.getValeur()) + "(coeff:" + note.getCoeff()+")");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    private Double calculerMoyenneEleve(Map<Matiere, List<Note>> map){
+        double moyenne = 0.0f;
+        for (Map.Entry<Matiere, List<Note>> mapEntry: map.entrySet()) {
+            moyenne += calculerMoyenneMatiere(mapEntry.getValue());
+        }
+        return moyenne/map.size();
+    }
+
+    private Double calculerMoyenneMatiere(List<Note> notes){
+        double moyenne = 0.0f;
+        int compteurCoeff = 0;
+        for (Note note: notes) {
+            moyenne += note.getValeur() * note.getCoeff();
+            compteurCoeff += note.getCoeff();
+        }
+        return moyenne/compteurCoeff;
+    }
+    private void initialiserMapEleve(){
+        for (int i = 0; i < Constantes.NID.length; i++) {
+            maMap.put(new Eleve(Constantes.NID[i], Constantes.NOMS[i], Constantes.PRENOMS[i]), initialiserMatiere());
+        }
+    }
+
+    private Map<Matiere, List<Note>> initialiserMatiere(){
+        Map<Matiere, List<Note>> matiereMap = new TreeMap<>(new ComparatorMatiere());
+        for (int i = 0; i < new Random().nextInt(2, 5); i++) {
+            matiereMap.put(Matiere.values()[new Random().nextInt(0, 6)], initNotes());
+        }
+
+        return matiereMap;
+    }
+    private List<Note> initNotes(){
+        List<Note> notes = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            notes.add(new Note(new Random().nextFloat(10f,20f), new Random().nextInt(1, 8)));
+        }
+        return notes;
+    }
+}
