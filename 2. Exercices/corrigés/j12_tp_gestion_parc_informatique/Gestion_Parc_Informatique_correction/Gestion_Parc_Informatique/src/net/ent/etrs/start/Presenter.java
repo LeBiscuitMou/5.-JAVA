@@ -5,7 +5,6 @@ import lombok.NoArgsConstructor;
 import net.ent.etrs.commons.utils.AffichageConsole;
 import net.ent.etrs.commons.utils.LectureConsole;
 import net.ent.etrs.model.entities.*;
-import net.ent.etrs.model.entities.exceptions.MaterielInformatiqueConstructionException;
 import net.ent.etrs.model.entities.references.Constantes;
 import net.ent.etrs.model.entities.references.TailleEcran;
 import net.ent.etrs.model.entities.references.TypeOrdinateur;
