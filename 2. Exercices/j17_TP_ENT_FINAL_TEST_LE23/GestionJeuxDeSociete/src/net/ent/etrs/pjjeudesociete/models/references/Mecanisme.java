@@ -1,4 +1,4 @@
-package net.ent.etrs.poinsot.jeuSociete.model.references;
+package net.ent.etrs.pjjeudesociete.models.references;
 
 public enum Mecanisme {
 

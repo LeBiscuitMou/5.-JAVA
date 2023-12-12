@@ -55,6 +55,7 @@ public class JeuVideo extends AbstractEntity implements Comparable<JeuVideo>{
         this.nom = nom;
     }
 
+
     private void setDateSortie(LocalDate dateSortie) throws JeuVideoException {
         if(Objects.isNull(dateSortie)){
             throw new JeuVideoException(ConstErrMsg.DATE_SORTIE_NULL);

@@ -17,13 +17,6 @@ public interface FacadeView {
     void afficherMessageErreur(String message);
 
     /**
-     * Permet d'afficher tous les messages liés à une erreur.
-     *
-     * @param error l'exception dont il faut afficher les messages
-     */
-    void afficherMessageErreur(Throwable error);
-
-    /**
      * Permet d'afficher un message à l'utilisateur.
      *
      * @param message le message pour l'utilisateur

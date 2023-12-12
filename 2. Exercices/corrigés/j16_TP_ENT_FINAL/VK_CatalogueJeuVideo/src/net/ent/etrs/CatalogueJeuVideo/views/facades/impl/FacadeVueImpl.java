@@ -29,18 +29,6 @@ public class FacadeVueImpl implements FacadeView {
         AffichageConsole.afficherErreur(message);
     }
 
-    /**
-     * Permet d'afficher tous les messages liés à une erreur.
-     *
-     * @param error l'exception dont il faut afficher les messages
-     */
-    @Override
-    public void afficherMessageErreur(Throwable error) {
-        if(Objects.nonNull(error.getCause())){
-            afficherMessageErreur(error);
-        }
-        afficherMessageErreur(error.getMessage());
-    }
 
     /**
      * Permet d'afficher un message à l'utilisateur.
@@ -254,7 +242,6 @@ public class FacadeVueImpl implements FacadeView {
     public JeuVideo selectionnerJeuVideo(List<JeuVideo> jeuVideoList){
         return (JeuVideo) selectObjet(jeuVideoList, ConstView.CHOISIR_JEU_VIDEO);
     }
-
 
     private Object selectObjet(List<?> list, String message){
         Map<Integer, String> map = new HashMap<>();

@@ -27,9 +27,13 @@ public final class ConstanteMetier {
     public static final String FACADE_MAISON_EDITION_ERROR_SAVE_DAO = "Impossible de sauvegarder une maison d'édition";
     public static final int NB_JOUEUR_MIN = 0;
     public static final float PRIX_MINIMUM = 8f;
-    public static final String ENTITIES_FACTORY_AUTEUR_ERROR = "Impossible de créer l'auteur";
-    public static final String ENTITIES_FACTORY_MAISON_EDITION_ERROR = "Impossible de créer la maison d'édition";
-    public static final String ENTITIES_FACTORY_JDS_ERROR = "Impossible de créer le jeu de société";
+    public static final String ENTITY_NULL = "L'entité est null";
+    public static final String ENTITY_EXIST = "L'entité existe déjà";
+    public static final String FACADE_JDS_NULL = "Le jeu de société est NULL";
+    public static final String FACADE_AUTEUR_NULL = "L'auteur est NULL";
+    public static final String FACADE_MAISON_EDITION_NULL = "La maison d'édition est NULL";
+    public static final String FACADE_GET_ME_JDS = "La";
+    public static final String FACADE_MECANISME_NULL = "Le mécanisme est NULL";
 
 
     private ConstanteMetier() {

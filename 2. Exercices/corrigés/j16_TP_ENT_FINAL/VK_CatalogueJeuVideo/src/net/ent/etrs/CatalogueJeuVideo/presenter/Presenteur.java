@@ -105,7 +105,7 @@ public class Presenteur {
             }
             fMet.sauvegarderConsole(console);
         } catch (BusinessException | ViewException | ConsoleException e) {
-            fVue.afficherMessageErreur(e);
+            afficherMessagesErreur(e);
         }
     }
 
@@ -122,7 +122,7 @@ public class Presenteur {
             }
             fMet.sauvergarderJeuVideo(jeu);
         } catch (BusinessException | ViewException e) {
-            fVue.afficherMessageErreur(e);
+            afficherMessagesErreur(e);
         }
     }
 
@@ -130,7 +130,7 @@ public class Presenteur {
         try {
             fMet.sauvegarderFabriquant(fVue.saisirFabricant());
         } catch (BusinessException | ViewException e) {
-            fVue.afficherMessageErreur(e);
+            afficherMessagesErreur(e);
         }
     }
 
@@ -141,7 +141,7 @@ public class Presenteur {
             fMet.modifierJeuVideo(jeu);
             fVue.afficherMessage("le jeu vidéo à était mis à jour avec succès");
         } catch (BusinessException | ViewException e) {
-            fVue.afficherMessageErreur(e);
+            afficherMessagesErreur(e);
         }
     }
 
@@ -163,7 +163,7 @@ public class Presenteur {
                 fVue.afficherJeuVideo(list);
             }
         } catch (BusinessException e) {
-            fVue.afficherMessageErreur(e);
+            afficherMessagesErreur(e);
         }
     }
 
@@ -198,7 +198,7 @@ public class Presenteur {
             fVue.afficherJeuVideo(fMet.recupererJeuVideo());
             fVue.afficherConsoleAvecJeuVideo(fMet.recupererConsoleAvecLeurJeuxVideo());
         } catch (BusinessException e) {
-            fVue.afficherMessageErreur(e);
+            afficherMessagesErreur(e);
         }
     }
 
@@ -221,8 +221,21 @@ public class Presenteur {
         try {
             this.fMet.initialisation(lstInit);
         } catch (BusinessException e) {
-            fVue.afficherMessageErreur(e.getMessage());
+            afficherMessagesErreur(e);
         }
 
+    }
+
+
+    /**
+     * Permet d'afficher tous les messages liés à une erreur.
+     *
+     * @param error l'exception dont il faut afficher les messages
+     */
+    public void afficherMessagesErreur(Throwable error) {
+        if(Objects.nonNull(error.getCause())){
+            afficherMessagesErreur(error.getCause());
+        }
+        fVue.afficherMessageErreur(error.getMessage());
     }
 }
