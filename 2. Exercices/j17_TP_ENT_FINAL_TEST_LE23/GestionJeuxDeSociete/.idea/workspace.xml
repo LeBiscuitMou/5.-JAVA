@@ -5,68 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68fae3c5-d92a-4748-a6b0-56c752dce374" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/net/ent/etrs/pjjeudesociete/models/references/ConstanteMetier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/ent/etrs/pjjeudesociete/models/references/Mecanisme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/ent/etrs/pjjeudesociete/models/references/Pays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/Truc avec DAO.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/BaseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/IDaoIngredient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/IDaoPotion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/exceptions/DaoException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/DaoFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/DaoIngredientMemImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/DaoPotionMemImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/MemBaseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/AbstractEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/EntitiesFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/Ingredient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/Potion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/PotionAmelioration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/PotionDeDegat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/PotionDeVie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/EntitiesException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/FacadeMetierImplException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/IngredientException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionAmeliorationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionDeDegatException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionDeVieException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/facades/FacadeMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/facades/impl/FacadeMetierFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/facades/impl/FacadeMetierImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/ConstErrMsg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/ConstMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/Contenant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/Nature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/utils/StringVerif.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/utils/exceptions/StringVerifException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/utils/references/ConstUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/Presenteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/PresenteurFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/exceptions/PresenteurException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/exceptions/PresenteurFactoryException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/references/ConstPresenteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/start/Lanceur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/commons/utils/AffichageConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/commons/utils/AffichageConsole2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/commons/utils/LectureConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/facades/FacadeVue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/facades/impl/FacadeVueFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/facades/impl/FacadeVueImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/references/ConstVue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/references/ListeOptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/references/TypePotions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/model/entities/JeuVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/model/entities/JeuVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/presenter/Presenteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/presenter/Presenteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/FacadeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/FacadeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/impl/FacadeVueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/impl/FacadeVueImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/commons/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/BaseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/DaoAuteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/DaoJeuSociete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/DaoMaisonEdition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/MemBaseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/exceptions/DaoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/impl/DaoAuteurImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/impl/DaoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/impl/DaoJeuSocieteImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/daos/impl/DaoMaisonEditionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/Auteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/EntitiesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/JeuSociete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/MaisonEdition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/comparator/ComparatorJeuSocieteByAuteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/exceptions/AuteurException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/exceptions/EntitiesFactoryException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/exceptions/JeuSocieteException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/exceptions/MaisonEditionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/references/ConstantesMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/references/Mecanisme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/entities/references/Pays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/facade/FacadeMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/facade/exception/BusinessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/facade/impl/FacadeMetierImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/models/facade/impl/FactoryFacadeMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/presenter/Presenteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/presenter/exception/PresenteurException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/presenter/references/ConstantesPresenteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/start/Lanceur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/commons/utils/AffichageConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/commons/utils/LectureConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/commons/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/exception/ViewException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/facade/FacadeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/facade/impl/FacadeViewImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/facade/impl/FactoryFacadeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/correction/src/net/ent/etrs/pjjeudesociete/views/references/ConstantesView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j17_TP_ENT_FINAL_TEST_LE23/~$ST_FINAL_JSEBASE_L23.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$ST_FINAL_JSEBASE_L23.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../~$ST_FINAL_JSEBASE_L23.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/dao/BaseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/dao/exceptions/DaoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/dao/impl/DaoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/dao/impl/MemBaseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/entities/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/entities/EntitiesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/entities/exceptions/EntitiesFactoryException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/facade/FacadeMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/facade/exceptions/FacadeMetierException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/facade/impl/FacadeMetierImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/facade/impl/FactoryFacadeMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/model/references/ConstanteMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/presenteur/Presenteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/presenteur/PresenteurFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/presenteur/exceptions/PresenteurException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/presenteur/exceptions/PresenteurFactoryException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/presenteur/references/ConstantePresenteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/start/Lanceur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/view/commons/utils/AffichageConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/view/commons/utils/LectureConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/view/facade/FacadeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/view/facade/exceptions/FacadeViewException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/view/facade/impl/FacadeViewImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/view/facade/impl/FactoryFacadeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3. Ressources/squeletteJAVA/src/net/ent/etrs/poinsot/projet/view/references/ConstanteView.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +92,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2ZQrBitf0ZwT3aVGYzqN8FRmage" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -100,7 +108,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo",
+    "last_opened_file_path": "E:/UV_2/5. JAVA/3. Ressources/squeletteJAVA",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -132,6 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698136262737</updated>
       <workItem from="1702365012236" duration="13026000" />
+      <workItem from="1702386116059" duration="747000" />
     </task>
     <servers />
   </component>
