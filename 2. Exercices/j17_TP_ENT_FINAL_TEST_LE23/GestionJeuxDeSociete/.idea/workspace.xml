@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68fae3c5-d92a-4748-a6b0-56c752dce374" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/net/ent/etrs/pjjeudesociete/models/references/ConstanteMetier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/ent/etrs/pjjeudesociete/models/references/Mecanisme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/ent/etrs/pjjeudesociete/models/references/Pays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/Truc avec DAO.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/BaseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/IDaoIngredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/IDaoPotion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/exceptions/DaoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/DaoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/DaoIngredientMemImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/DaoPotionMemImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/dao/impl/MemBaseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/EntitiesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/Ingredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/Potion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/PotionAmelioration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/PotionDeDegat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/entities/PotionDeVie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/EntitiesException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/FacadeMetierImplException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/IngredientException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionAmeliorationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionDeDegatException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionDeVieException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/exceptions/PotionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/facades/FacadeMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/facades/impl/FacadeMetierFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/facades/impl/FacadeMetierImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/ConstErrMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/ConstMetier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/Contenant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/references/Nature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/utils/StringVerif.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/utils/exceptions/StringVerifException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/model/utils/references/ConstUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/Presenteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/PresenteurFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/exceptions/PresenteurException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/exceptions/PresenteurFactoryException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/presenter/references/ConstPresenteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/start/Lanceur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/commons/utils/AffichageConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/commons/utils/AffichageConsole2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/commons/utils/LectureConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/facades/FacadeVue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/facades/impl/FacadeVueFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/facades/impl/FacadeVueImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/references/ConstVue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/references/ListeOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/src/net/ent/etrs/GestionnairePotion/vues/references/TypePotions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/model/entities/JeuVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/model/entities/JeuVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/presenter/Presenteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/presenter/Presenteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/FacadeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/FacadeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/impl/FacadeVueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo/src/net/ent/etrs/CatalogueJeuVideo/views/facades/impl/FacadeVueImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2ZQrBitf0ZwT3aVGYzqN8FRmage" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="net.ent.etrs.pjjeudesociete.models.entities.exceptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\UV_2\5. JAVA\2. Exercices\j17_TP_ENT_FINAL_TEST_LE23\GestionJeuxDeSociete\src\net\ent\etrs\poinsot\jeuSociete\view\facade" />
+      <recent name="E:\UV_2\5. JAVA\2. Exercices\j17_TP_ENT_FINAL_TEST_LE23\GestionJeuxDeSociete\src\net\ent\etrs\poinsot\jeuSociete\model\facade" />
+      <recent name="E:\UV_2\5. JAVA\2. Exercices\j17_TP_ENT_FINAL_TEST_LE23\GestionJeuxDeSociete\src\net\ent\etrs\poinsot\jeuSociete\model\references" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\UV_2\5. JAVA\2. Exercices\j17_TP_ENT_FINAL_TEST_LE23\GestionJeuxDeSociete\src\net\ent\etrs\poinsot\jeuSociete\model\facade" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68fae3c5-d92a-4748-a6b0-56c752dce374" name="Changes" comment="" />
+      <created>1698136262737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698136262737</updated>
+      <workItem from="1702365012236" duration="13026000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
