@@ -5,60 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="685e0111-63a4-4d6f-8d98-8a6e984d572e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/IDaoChallenge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/IDaoLeague.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/IDaoPersonnage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoChallengeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoLeagueImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoPersonnageImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/Challenge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/League.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/Personnage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/exceptions/ChallengeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/exceptions/LeagueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/exceptions/PersonnageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/references/ConstantesMetier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/references/LabySpecialite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/FacadeMetier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/impl/FacadeMetierImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/Presenteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/start/Lanceur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/FacadeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/impl/FacadeViewImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Truc avec DAO/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Truc avec DAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Truc avec DAO/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/gestion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/gestionLeague.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/commons/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/commons/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/daos/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/daos/MemBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/MemBaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/daos/exceptions/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/exceptions/DaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/daos/impl/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/entities/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/entities/EntitiesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/EntitiesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/entities/comparator/ComparatorJeuSocieteByAuteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/entities/exceptions/EntitiesFactoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/exceptions/EntitiesFactoryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/entities/references/ConstantesMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/facade/FacadeMetier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/facade/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/exception/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/facade/impl/FacadeMetierImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/models/facade/impl/FactoryFacadeMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/impl/FactoryFacadeMetier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/presenter/Presenteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/presenter/PresenteurFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/PresenteurFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/presenter/exception/PresenteurException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/exception/PresenteurException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/presenter/exception/PresenteurFactoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/exception/PresenteurFactoryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/presenter/references/ConstantesPresenteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/references/ConstantesPresenteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/start/Lanceur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/commons/utils/AffichageConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/commons/utils/AffichageConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/commons/utils/LectureConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/commons/utils/LectureConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/commons/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/commons/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/exception/ViewException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/exception/ViewException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/facade/FacadeView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/facade/impl/FacadeViewImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/facade/impl/FactoryFacadeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/impl/FactoryFacadeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/projet/views/references/ConstantesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/references/ConstantesView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoLeagueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoLeagueImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/League.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/references/ConstantesMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/references/ConstantesMetier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/impl/FacadeMetierImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/impl/FacadeMetierImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/Presenteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/Presenteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/FacadeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/FacadeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/impl/FacadeViewImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/impl/FacadeViewImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698136262737</updated>
       <workItem from="1702365329635" duration="9110000" />
-      <workItem from="1702452974728" duration="2750000" />
+      <workItem from="1702452974728" duration="5176000" />
     </task>
     <servers />
   </component>

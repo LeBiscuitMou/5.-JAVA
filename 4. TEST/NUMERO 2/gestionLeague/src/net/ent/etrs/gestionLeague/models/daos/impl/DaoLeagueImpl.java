@@ -2,6 +2,7 @@ package net.ent.etrs.gestionLeague.models.daos.impl;
 
 import net.ent.etrs.gestionLeague.models.daos.IDaoLeague;
 import net.ent.etrs.gestionLeague.models.daos.MemBaseDao;
+import net.ent.etrs.gestionLeague.models.entities.Challenge;
 import net.ent.etrs.gestionLeague.models.entities.League;
 import net.ent.etrs.gestionLeague.models.entities.references.LabySpecialite;
 
@@ -15,11 +16,20 @@ public class DaoLeagueImpl extends MemBaseDao<League> implements IDaoLeague {
 
     @Override
     public Map<League, Long> getRewardPointsByLeague() {
-        return null;
+        Map<League, Long> leagueLongMap = new HashMap<>();
+        for (League league : this.persist.values()) {
+            Long total = 0L;
+            for (Challenge c : league.getLesChallenges()) {
+                total += c.getRewardPoints();
+            }
+            leagueLongMap.put(league, total);
+        }
+        return leagueLongMap;
     }
 
     @Override
     public Map<League, Set<LabySpecialite>> getBestBuildByLeague() {
-        return null;
+        Map<League, Set<LabySpecialite>> leagueSetMap = new HashMap<>();
+
     }
 }

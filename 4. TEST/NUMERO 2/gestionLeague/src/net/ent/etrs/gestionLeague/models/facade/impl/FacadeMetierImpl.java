@@ -6,14 +6,17 @@ import net.ent.etrs.gestionLeague.models.daos.IDaoPersonnage;
 import net.ent.etrs.gestionLeague.models.daos.exceptions.DaoException;
 import net.ent.etrs.gestionLeague.models.daos.impl.DaoFactory;
 import net.ent.etrs.gestionLeague.models.entities.Challenge;
+import net.ent.etrs.gestionLeague.models.entities.EntitiesFactory;
 import net.ent.etrs.gestionLeague.models.entities.League;
 import net.ent.etrs.gestionLeague.models.entities.Personnage;
 import net.ent.etrs.gestionLeague.models.entities.exceptions.ChallengeException;
+import net.ent.etrs.gestionLeague.models.entities.exceptions.EntitiesFactoryException;
 import net.ent.etrs.gestionLeague.models.entities.references.ConstantesMetier;
 import net.ent.etrs.gestionLeague.models.entities.references.LabySpecialite;
 import net.ent.etrs.gestionLeague.models.facade.FacadeMetier;
 import net.ent.etrs.gestionLeague.models.facade.exception.BusinessException;
 
+import java.time.LocalDate;
 import java.util.*;
 
 public class FacadeMetierImpl implements FacadeMetier {
@@ -30,7 +33,37 @@ public class FacadeMetierImpl implements FacadeMetier {
      */
     @Override
     public void initialisation(List<String> init) throws BusinessException {
-
+        for (String texteInit : init) {
+            String[] decoupage = texteInit.split(";");
+            if (decoupage.length > 0) {
+                try {
+                    if (decoupage[0].equals("LEAGUE")) {
+                        String nom = decoupage[1];
+                        LocalDate dateDebut = LocalDate.parse(decoupage[2], ConstantesMetier.DATE_FORMAT);
+                        LocalDate dateFin = null;
+                        if (decoupage.length > 3) {
+                            dateFin = LocalDate.parse(decoupage[3], ConstantesMetier.DATE_FORMAT);
+                        }
+                        League l = EntitiesFactory.fabriquerLeague(dateDebut, dateFin, nom);
+                        daoLeague.save(l);
+                    } else if (decoupage[0].equals("CHALLENGE")) {
+                        String nom = decoupage[1];
+                        Integer point = Integer.parseInt(decoupage[3]);
+                        String desc = decoupage[2];
+                        Challenge c = EntitiesFactory.fabriquerChallenge(nom, point, desc);
+                        daoChallenge.save(c);
+                    } else {
+                        Integer level = Integer.parseInt(decoupage[4]);
+                        String pseudo = decoupage[2];
+                        LabySpecialite labySpecialite = LabySpecialite.valueOf(decoupage[3].toUpperCase());
+                        Personnage p = EntitiesFactory.fabriquerPersonnage(level, labySpecialite, pseudo);
+                        daoPersonnage.save(p);
+                    }
+                } catch (EntitiesFactoryException | DaoException e) {
+                    throw new BusinessException(e);
+                }
+            }
+        }
     }
 
     /**

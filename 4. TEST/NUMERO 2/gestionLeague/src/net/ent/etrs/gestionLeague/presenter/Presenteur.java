@@ -64,6 +64,15 @@ public class Presenteur {
         try {
             League league = this.facadeView.saisirNouvelleLeague();
             facadeMetier.saveLeague(league);
+
+            Map<League, Challenge> leagueChallengeMap = new HashMap<>();
+            Map<League, Personnage> leaguePersonnageMap = new HashMap<>();
+            do {
+                Set<Challenge> setChallenges = new HashSet<>(this.facadeMetier.findAllChallenges());
+                Challenge challenge = facadeView.choisirChallenge(setChallenges);
+                leagueChallengeMap.put(league, challenge);
+            } while (facadeView.lectureChoixBoolean("Voulez- vous choisir un autre challenge ?"));
+
         } catch (EntitiesFactoryException | ViewException | BusinessException e) {
             facadeView.afficherMessageErreur(e.getMessage());
         }
@@ -139,6 +148,7 @@ public class Presenteur {
             init.add("PERSONNAGE;18;uhdSTOFASTINKER;Champion;100;");
             init.add("PERSONNAGE;19;DAD_DICK_NICE_GUY;Trickster;100;");
             init.add("PERSONNAGE;20;CloudConnected;Juggernaut;100;");
+            // Chargement de la league Blight
             init.add("LEAGUE;Blight;06/09/2019;09/12/2019;");
             init.add("CHALLENGE;Complete these Encounters I;Complete each of the following Encounters;5;");
             init.add("CHALLENGE;Build Blight Towers I;Build each of the following Blight Towers.;6;");

@@ -34,6 +34,7 @@ public final class ConstantesMetier {
     public static final String FACADE_PERSONNAGE_NULL = "Personnage est null";
     public static final String FACADE_CHALLENGE_NULL = "Challenge est null";
     public static final String FACADE_LEAGUE_NULL = "League est null";
+    public static final String INIT_ERROR = "Impossible d'initialiser";
 
     private ConstantesMetier() {
     }

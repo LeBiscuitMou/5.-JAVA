@@ -86,6 +86,7 @@ public interface FacadeView {
      */
     League saisirNouvelleLeague() throws EntitiesFactoryException, ViewException;
 
+
     /**
      * permet de choisir un challenge
      *

@@ -4,16 +4,13 @@ import net.ent.etrs.gestionLeague.models.entities.exceptions.LeagueException;
 import net.ent.etrs.gestionLeague.models.entities.references.ConstantesMetier;
 
 import java.time.LocalDate;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class League extends AbstractEntity implements Comparable<League> {
-    private Map<Personnage, Integer> classement;
+    private Map<Personnage, Integer> classement = new HashMap<>();
     private LocalDate dateDebut;
     private LocalDate dateFin;
-    private Set<Challenge> lesChallenges;
+    private Set<Challenge> lesChallenges = new HashSet<>();
     private String nom;
 
     public League(LocalDate dateDebut, LocalDate dateFin, String nom) throws LeagueException {
@@ -42,6 +39,9 @@ public class League extends AbstractEntity implements Comparable<League> {
     }
 
     public void setDateFin(LocalDate dateFin) throws LeagueException {
+        if (Objects.isNull(dateFin)) {
+            dateFin = LocalDate.MAX;
+        }
         if (dateFin.isBefore(this.dateDebut)) {
             throw new LeagueException(ConstantesMetier.LEAGUE_DATEDEBUT_INVALIDE);
         }
@@ -96,7 +96,7 @@ public class League extends AbstractEntity implements Comparable<League> {
     }
 
     public boolean estValide() {
-        if (this.lesChallenges.size() < ConstantesMetier.NB_MIN_CHALLENGE) {
+        if (this.lesChallenges.isEmpty() || this.lesChallenges.size() < ConstantesMetier.NB_MIN_CHALLENGE) {
             return false;
         }
         return ContientMinRewardPoints();

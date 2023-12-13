@@ -77,7 +77,7 @@ public class FacadeViewImpl implements FacadeView {
      */
     @Override
     public boolean lectureChoixBoolean(String entete) {
-        return LectureConsole.lectureBoolean("Oui ou Non ?");
+        return LectureConsole.lectureBoolean(entete);
     }
 
     /**
@@ -91,16 +91,16 @@ public class FacadeViewImpl implements FacadeView {
             DateTimeFormatter pattern = DateTimeFormatter.ofPattern(ConstantesView.DATE_PATTERN);
             String formatedDateDebut = l.getDateDebut().format(pattern);
 
-            if (Objects.isNull(l.getDateFin())) {
+            if (l.getDateFin().equals(LocalDate.MAX)) {
                 afficherMessage(String.format("- Nom de la ligue : %s%n" +
-                                                "%-20s Du %s%n" +
-                                                "%-20s Est validée : %b",
+                                                "\tDu %s%n" +
+                                                "\tEst validée : %b",
                         l.getNom(), formatedDateDebut, l.estValide()));
             } else {
                 String formatedDateFin = l.getDateFin().format(pattern);
                 afficherMessage(String.format("- Nom de la ligue : %s%n" +
-                                                "%-20s Du %s au %s%n" +
-                                                "%-20s Est validée : %b",
+                                                "\tDu %s au %s%n" +
+                                                "\tEst validée : %b",
                         l.getNom(), formatedDateDebut, formatedDateFin, l.estValide()));
             }
         }
@@ -144,7 +144,7 @@ public class FacadeViewImpl implements FacadeView {
      * Permet de créer une league sans joueurs ni challenge
      *
      * @return la league créé
-     * @throws EntitiesFactoryException exception si pb ç la création
+     * @throws ViewException exception si pb ç la création
      */
     @Override
     public League saisirNouvelleLeague() throws ViewException {
