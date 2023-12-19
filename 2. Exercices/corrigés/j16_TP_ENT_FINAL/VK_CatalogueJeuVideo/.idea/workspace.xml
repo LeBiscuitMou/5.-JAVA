@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685e0111-63a4-4d6f-8d98-8a6e984d572e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoLeagueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/daos/impl/DaoLeagueImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/League.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/references/ConstantesMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/entities/references/ConstantesMetier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/impl/FacadeMetierImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/models/facade/impl/FacadeMetierImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/Presenteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/presenter/Presenteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/FacadeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/FacadeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/impl/FacadeViewImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4. TEST/NUMERO 2/gestionProjet/src/net/ent/etrs/gestionLeague/views/facade/impl/FacadeViewImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="685e0111-63a4-4d6f-8d98-8a6e984d572e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/corrigés/Truc avec DAO",
+    "last_opened_file_path": "E:/UV_2/5. JAVA/2. Exercices/corrigés/j16_TP_ENT_FINAL/VK_CatalogueJeuVideo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +49,7 @@
       <updated>1698136262737</updated>
       <workItem from="1702365329635" duration="9110000" />
       <workItem from="1702452974728" duration="5176000" />
+      <workItem from="1702891712943" duration="2808000" />
     </task>
     <servers />
   </component>
